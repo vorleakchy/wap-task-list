@@ -2,14 +2,19 @@ package utility;
 
 import model.*;
 import db.DAO;
+import db.TeamDAO;
+import model.Task;
+import model.Team;
 
 import java.util.ArrayList;
-
- *  @author kl */
 import java.util.List;
 
 /**
  * utility class to return mock data for testing
+ *
+ * @author kl
+ * @since 11/19/2017
+ */
 public class MockData {
 
     public ArrayList<User> userList = new ArrayList<>();
@@ -20,8 +25,8 @@ public class MockData {
         userList.add(new User(1,"Steven",1));
         userList.add(new User(1,"Edwin",1));
         userList.add(new User(1,"Chy",2));
-        userList.add(new User(1,"Bernal",3));
-        userList.add(new User(1,"Duran",3));
+        userList.add(new User(1,"Bernal",5));
+        userList.add(new User(1,"Duran",5));
         return userList;
     }
 
