@@ -20,4 +20,18 @@ public class Team {
     public String getName() {
         return name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(obj==null){
+
+            return  false;
+        }
+        else{
+
+          return this.id==((Team)obj).getId()?true:false;
+        }
+
+    }
 }

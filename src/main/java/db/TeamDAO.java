@@ -19,47 +19,62 @@ public class TeamDAO implements DAO {
 
     FileWriter fileWriter;
     File file = new File("C:\\Users\\Steven\\Documents\\COMPRO\\WAP\\Project\\TaskListProject\\src\\main\\java\\db\\team.json");
+    private String location;
 
     private List<Team> teams = new ArrayList<>();
+
+    public TeamDAO(String location) {
+
+        this.location = location;
+    }
 
     public TeamDAO() {
 
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
     @Override
     public void insert(Object obj) {
 
         Team team = (Team) obj;
 
-        try {
+        if (!teamExists(team)) {
 
-            JSONObject jsonObject = new JSONObject();
+            try {
 
-            jsonObject.put("id", team.getId());
-            jsonObject.put("name", team.getName());
+                JSONObject jsonObject = new JSONObject();
 
-            JSONArray jsonArray = getJSONArray();
+                jsonObject.put("id", team.getId());
+                jsonObject.put("name", team.getName());
 
-            if (jsonArray == null) {
+                JSONArray jsonArray = getJSONArray();
 
-                jsonArray = new JSONArray();
+                if (jsonArray == null) {
+
+                    jsonArray = new JSONArray();
+                }
+
+                jsonArray.add(jsonObject);
+
+                System.out.println(jsonArray);
+
+                PrintWriter pw = new PrintWriter(file);
+                pw.write(jsonArray.toJSONString());
+
+                pw.flush();
+                pw.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-            jsonArray.add(jsonObject);
-
-            System.out.println(jsonArray);
-
-            PrintWriter pw = new PrintWriter(file);
-            pw.write(jsonArray.toJSONString());
-
-            pw.flush();
-            pw.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-
 
     }
 
@@ -68,8 +83,20 @@ public class TeamDAO implements DAO {
 
     }
 
+//    @Override
+//    public void update(Team team) {
+//
+////        if(teamExists(team)){
+////
+////            getJSONArray().stream().filter((tm)->((JSONObject)tm).equals(team)).map((tm)->team);
+////
+////        }
+//
+//    }
+
     @Override
     public void delete(int id) {
+
 
     }
 
@@ -126,9 +153,18 @@ public class TeamDAO implements DAO {
 
     }
 
-
     public boolean isEmpty() {
 
         return file.length() <= 0 ? true : false;
+    }
+
+    public boolean teamExists(Team tm) {
+
+        if (getJSONArray() != null) {
+
+            return ((List<Team>) read()).stream().anyMatch((team) -> team.equals(tm));
+        }
+
+        return false;
     }
 }

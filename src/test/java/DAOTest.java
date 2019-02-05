@@ -17,14 +17,14 @@ public class DAOTest {
     @Test
     public void testInsert() {
 
-        //   dao.insert(new Team(3, "GoTeam2"));
+        //dao.insert(new Team(5, "TeamEdwin"));
 
     }
 
     @Test
     public void testRead() {
 
-        //assertEquals(new Team(),dao.read());
+        assertEquals(new Team(),dao.read());
     }
 
     @Test
@@ -38,5 +38,12 @@ public class DAOTest {
     void testDAOSize() {
 
         assertEquals(3, dao.size());
+    }
+
+    @Test
+    void testTeamExists(){
+
+        assertEquals(true,((TeamDAO)dao).teamExists(new Team(5,"TeamEdwin")));
+
     }
 }
