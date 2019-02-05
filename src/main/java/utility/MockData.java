@@ -1,5 +1,6 @@
 package utility;
 
+import db.UserDAO;
 import model.*;
 import db.DAO;
 import db.TeamDAO;
@@ -21,6 +22,7 @@ public class MockData {
 
 
     public ArrayList<User> retrieveUserList() {
+        /*
         userList.add(new User(1,"Vorleak",1));
         userList.add(new User(1,"Steven",1));
         userList.add(new User(1,"Edwin",1));
@@ -28,6 +30,9 @@ public class MockData {
         userList.add(new User(1,"Bernal",5));
         userList.add(new User(1,"Duran",5));
         return userList;
+        */
+        DAO daoUser= new UserDAO();
+        return (ArrayList<User>) daoUser.read();// must chek if correct arraylist or list
     }
 
     public ArrayList<Task> taskList = new ArrayList<>();
