@@ -17,12 +17,13 @@ public class Task {
         this.priority = priority;
     }
     /*Edwin Bernal: i am adding a new constructor because the user need it*/
-    public Task(int id, String task, String dueDate, String category,int iduser) {
+    public Task(int id, String task, String dueDate, String category,int priority,int iduser) {
         this.id = id;
         this.task = task;
         this.dueDate = dueDate;
         this.category = category;
         this.idUser=iduser;
+        this.priority = priority;
     }
 
     public int getId() {

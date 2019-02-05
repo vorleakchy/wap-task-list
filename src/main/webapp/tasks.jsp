@@ -8,24 +8,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Task list</title>
     <link rel="stylesheet" type="text/css" href="resources/styles/tasks.css"	media="screen" />
     <script src="resources/scripts/jquery-2.0.3.js"></script>
     <script src="resources/scripts/jquery-tmpl.js"></script>
     <script src="resources/scripts/jquery.validate.js"></script>
     <script src="resources/scripts/jquery-serialization.js"></script>
     <script src="resources/scripts/tasks-controller.js"></script>
-
-    <title>Task list</title>
+    <script src="resources/scripts/date.js"></script>
 </head>
 <body>
+<header>
+    <span>Task list</span>
+</header>
 <main  id="taskPage">
     <section id="taskCreation" class="not">
         <form id="taskForm">
             <input type="hidden" name="id"/>
-            <div>
-                <label>Team</label> <select required="required" id="teamSelector"
-                                            name="team" class="large" placeholder="Select Team" maxlength="200" ></select>
-            </div>
+
             <div>
                 <label>Task</label> <input type="text" required="required"
                                            name="task" class="large" placeholder="Breakfast at Tiffanys" maxlength="200"  />

@@ -40,9 +40,9 @@ public class MockData {
 
     public ArrayList<Task> retrieveTaskList() {
 
-        taskList.add(new Task(101, "first task", "2017-11-19", "Personal", 1));
-        taskList.add(new Task(102, "second task", "2017-11-23", "Work", 2));
-        taskList.add(new Task(103, "third task", "2017-12-19", "Work", 3));
+        taskList.add(new Task(101, "first task", "2017-11-19", "Personal", 1,2));
+        taskList.add(new Task(102, "second task", "2017-11-23", "Work", 2,2));
+        taskList.add(new Task(103, "third task", "2017-12-19", "Work", 3,1 ));
 
         return taskList;
     }

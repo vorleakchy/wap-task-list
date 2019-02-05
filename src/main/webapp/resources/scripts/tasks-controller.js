@@ -12,7 +12,7 @@ tasksController = function () {
      */
     function retrieveTeamsFromServer() {
 
-        const teamSelector = $('#teamSelector');
+        var teamSelector = $('#teamSelector');
 
         $.ajax({
             'url': "TeamServlet",
