@@ -2,6 +2,9 @@ package model;
 
 public class User {
     private int id;
-    private String task;
-    private String dueDate;
+    private String name;
+    private int idteam;
+    public User()
+    {}
+
 }

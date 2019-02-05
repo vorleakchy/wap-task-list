@@ -6,12 +6,21 @@ public class Task {
     private String task;
     private String dueDate;
     private String category;
+    private int idUser;
 
     public Task(int id, String task, String dueDate, String category) {
         this.id = id;
         this.task = task;
         this.dueDate = dueDate;
         this.category = category;
+    }
+    /*Edwin Bernal: i am adding a new constructor because the user need it*/
+    public Task(int id, String task, String dueDate, String category,int iduser) {
+        this.id = id;
+        this.task = task;
+        this.dueDate = dueDate;
+        this.category = category;
+        this.idUser=iduser;
     }
 
     public int getId() {
@@ -44,5 +53,12 @@ public class Task {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+    public void setIdUser(int iduser){
+        this.idUser =iduser;
     }
 }
