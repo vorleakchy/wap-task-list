@@ -1,6 +1,6 @@
 package utility;
 
-import model.Task;
+import model.*;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,19 @@ import java.util.ArrayList;
  *  @since 11/19/2017
  *  @author kl */
 public class MockData {
+
+    public ArrayList<User> userList = new ArrayList<>();
+
+
+    public ArrayList<User> retrieveUserList() {
+        userList.add(new User(1,"Vorleak",1));
+        userList.add(new User(1,"Steven",1));
+        userList.add(new User(1,"Edwin",1));
+        userList.add(new User(1,"Chy",2));
+        userList.add(new User(1,"Bernal",3));
+        userList.add(new User(1,"Duran",3));
+        return userList;
+    }
 
     public ArrayList<Task> taskList = new ArrayList<>();
 
