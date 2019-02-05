@@ -4,6 +4,8 @@ import model.Team;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DAOTest {
@@ -17,14 +19,14 @@ public class DAOTest {
     @Test
     public void testInsert() {
 
-        //dao.insert(new Team(5, "TeamEdwin"));
+        dao.insert(new Team(1, "TeamVorleak"));
 
     }
 
     @Test
     public void testRead() {
 
-        assertEquals(new Team(),dao.read());
+        //assertEquals(new ArrayList<Team>(),dao.read());
     }
 
     @Test
