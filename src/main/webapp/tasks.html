@@ -42,9 +42,10 @@
 	<section>
 		<table id="tblTasks">
 			<colgroup>
-				<col width="40%">
+				<col width="30%">
 				<col width="15%">
 				<col width="15%">
+				<col width="10%">
 				<col width="30%">
 			</colgroup>
 			<thead>
@@ -52,6 +53,7 @@
 					<th>Name</th>
 					<th>Due</th>
 					<th>Category</th>
+					<th>Priority</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -100,6 +102,7 @@ if (window.indexedDB) {
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${requiredBy}">${requiredBy}</time></td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${category}</td>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}>${priority}</td>
 	<td>
 		<nav>
 			{{if complete != true}}			
