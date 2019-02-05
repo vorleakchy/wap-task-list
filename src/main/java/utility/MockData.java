@@ -1,12 +1,15 @@
 package utility;
 
 import model.*;
+import db.DAO;
 
 import java.util.ArrayList;
 
-/** utility class to return mock data for testing
- *  @since 11/19/2017
  *  @author kl */
+import java.util.List;
+
+/**
+ * utility class to return mock data for testing
 public class MockData {
 
     public ArrayList<User> userList = new ArrayList<>();
@@ -23,7 +26,7 @@ public class MockData {
     }
 
     public ArrayList<Task> taskList = new ArrayList<>();
-
+    DAO dao;
 
     public ArrayList<Task> retrieveTaskList() {
 
@@ -32,6 +35,20 @@ public class MockData {
         taskList.add(new Task(103, "third task", "2017-12-19", "Work"));
 
         return taskList;
+    }
+
+    public List<Task> retrieveTasks() {
+
+        return null;
+
+    }
+
+    public List<Team> retrieveTeams() {
+
+        dao = new TeamDAO();
+
+        return (List<Team>) dao.read();
+
     }
 
 }
