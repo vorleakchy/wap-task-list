@@ -7,6 +7,21 @@ tasksController = function() {
 	var taskPage;
 	var initialised = false;
 
+	/***
+	 * makes json call to server to get Teams list
+	 */
+	function retrieveTeamsFromServer() {
+
+		$.ajax({
+			'url':"TeamServlet",
+			"type": "get",
+			dataType: "json"
+			
+		})
+
+	}
+
+
     /**
 	 * makes json call to server to get task list.
 	 * currently just testing this and writing return value out to console
