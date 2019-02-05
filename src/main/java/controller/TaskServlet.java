@@ -1,7 +1,6 @@
 package controller;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import model.Task;
 import utility.MockData;
 
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/TaskServlet")
@@ -26,6 +24,7 @@ public class TaskServlet extends HttpServlet {
 
         String JSONtasks;
         List<Task> taskList = new MockData().retrieveTaskList();
+
         JSONtasks = new Gson().toJson(taskList);
 
         response.setContentType("application/json");
