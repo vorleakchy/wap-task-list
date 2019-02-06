@@ -33,6 +33,5 @@ public class TaskServlet extends HttpServlet {
         out.write(JSONtasks);
 
 
-
     }
 }

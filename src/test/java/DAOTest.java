@@ -26,7 +26,7 @@ public class DAOTest {
     @Test
     public void testRead() {
 
-        //assertEquals(new ArrayList<Team>(),dao.read());
+       // assertEquals(null,dao.read());
     }
 
     @Test

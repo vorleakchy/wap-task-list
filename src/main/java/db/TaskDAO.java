@@ -1,6 +1,6 @@
 package db;
 
-import model.Team;
+import model.Task;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -13,33 +13,29 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeamDAO implements DAO {
+public class TaskDAO implements DAO {
 
-    final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/team.json");
+    final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/task.json");
 
-    private List<Team> teams = new ArrayList<>();
+    private List<Task> tasks = new ArrayList<>();
 
-    public TeamDAO() {
-
-
-    }
-
-    /*add a Team to the TeamDAO*/
     @Override
     public void insert(Object obj) {
 
-        Team team = (Team) obj;
+        Task task = (Task) obj;
 
-        if (!teamExists(team)) {
+        if (!taskExists(task)) {
 
             try {
 
                 JSONObject jsonObject = new JSONObject();
+                jsonObject.put("id", task.getId());
+                jsonObject.put("name", task.getTask());
+                jsonObject.put("dueDate", task.getDueDate());
+                jsonObject.put("category", task.getCategory());
+                jsonObject.put("priority", task.getPriority());
 
-                jsonObject.put("id", team.getId());
-                jsonObject.put("name", team.getName());
-
-                JSONArray jsonArray = getJSONArray();
+                JSONArray jsonArray= getJSONArray();
 
                 if (jsonArray == null) {
 
@@ -61,22 +57,19 @@ public class TeamDAO implements DAO {
             }
         }
 
+
     }
 
-    /*Update a Team from the DAO*/
     @Override
     public void update() {
 
     }
 
-    /*Delete a Team from the DAO*/
     @Override
     public void delete(int id) {
 
-
     }
 
-    /*Get Teams from the DAO*/
     @Override
     public Object read() {
 
@@ -88,21 +81,23 @@ public class TeamDAO implements DAO {
 
                 int id = Integer.parseInt(teamObject.get("id").toString());
                 String name = String.valueOf(teamObject.get("name").toString());
+                String date = String.valueOf(teamObject.get("dueDate").toString());
+                String category = String.valueOf(teamObject.get("category").toString());
+                int priority = Integer.parseInt(teamObject.get("priority").toString());
 
-                Team team = new Team(id, name);
 
-                teams.add(team);
+                Task task = new Task(id, name, date, category, priority);
+
+                tasks.add(task);
 
             });
         }
 
-        return teams;
+        return tasks;
     }
 
-    /*Returns the number of teams in the DAO*/
     @Override
     public int size() {
-
         if (!isEmpty()) return (int) getJSONArray().stream().count();
 
         return 0;
@@ -114,12 +109,12 @@ public class TeamDAO implements DAO {
         return file.length() <= 0 ? true : false;
     }
 
-    /*Checks whether Team passed in the parameter args exists*/
-    public boolean teamExists(Team tm) {
+    /*Checks whether Task passed in the parameter args exists*/
+    public boolean taskExists(Task tsk) {
 
         if (getJSONArray() != null) {
 
-            return ((List<Team>) read()).stream().anyMatch((team) -> team.equals(tm));
+            return ((List<Task>) read()).stream().anyMatch((task) -> task.getId()==tsk.getId()?true:false);
         }
 
         return false;
@@ -147,6 +142,5 @@ public class TeamDAO implements DAO {
 
 
     }
-
 
 }

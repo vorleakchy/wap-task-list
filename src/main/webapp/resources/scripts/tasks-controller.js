@@ -7,32 +7,6 @@ tasksController = function () {
     var taskPage;
     var initialised = false;
 
-    /***
-     * makes json call to server to get Teams list
-     */
-    function retrieveTeamsFromServer() {
-
-        const teamSelector = $('#teamSelector');
-
-        $.ajax({
-            'url': "TeamServlet",
-            'type': "get",
-            dataType: "json",
-            'success': onSuccess,
-            'fail': onFail
-        });
-
-        function onSuccess(data) {
-            data.forEach(function (k, v) {
-                teamSelector.html("<option value='" + v.getName() + "'></option>");
-            });
-
-            console.log("Success");
-        }
-        function onFail() {
-            console.log("Error: Cannot access Server");
-        }
-    }
 
 
     /**
@@ -99,8 +73,6 @@ tasksController = function () {
                     evt.preventDefault();
                     $(taskPage).find('#taskCreation').removeClass('not');
                 });
-
-                retrieveTasksServer();
 
                 /**     * 11/19/17kl        */
                 $(taskPage).find('#btnRetrieveTasks').click(function (evt) {
