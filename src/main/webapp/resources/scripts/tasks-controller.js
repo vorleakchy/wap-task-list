@@ -7,8 +7,7 @@ tasksController = function () {
     var taskPage;
     var initialised = false;
 
-
-
+    let serverTaskData=null;
     /**
      * makes json call to server to get task list.
      * currently just testing this and writing return value out to console
@@ -32,6 +31,7 @@ tasksController = function () {
      */
     function displayTasksServer(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
         console.log(data);
+        serverTaskData=data;
         tasksController.loadServerTasks(data);
     }
 
@@ -53,6 +53,19 @@ tasksController = function () {
                 $(row).addClass("warning");
             }
         });
+    }
+
+    /***
+     * sort tasks by team id
+     *
+     * Gets a list of all tasks from the server side sent through as JSON data,
+     * Performs filter functions on it and returns only those whose users belong
+     * to the Team specified by ID in the Params.
+     */
+    function sortByTeam(id) {
+
+       serverTaskData.filter((t)=>t.user.teamID==id?true:false).toArray();
+
     }
 
     return {

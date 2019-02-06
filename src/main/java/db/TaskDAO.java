@@ -35,7 +35,7 @@ public class TaskDAO implements DAO {
                 jsonObject.put("category", task.getCategory());
                 jsonObject.put("priority", task.getPriority());
 
-                JSONArray jsonArray= getJSONArray();
+                JSONArray jsonArray = getJSONArray();
 
                 if (jsonArray == null) {
 
@@ -114,7 +114,7 @@ public class TaskDAO implements DAO {
 
         if (getJSONArray() != null) {
 
-            return ((List<Task>) read()).stream().anyMatch((task) -> task.getId()==tsk.getId()?true:false);
+            return ((List<Task>) read()).stream().anyMatch((task) -> task.getId() == tsk.getId() ? true : false);
         }
 
         return false;
