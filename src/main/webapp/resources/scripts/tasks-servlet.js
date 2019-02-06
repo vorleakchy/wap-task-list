@@ -3,12 +3,6 @@ storageEngine = function() {
 	var objectStores;
 	return {
 		init : function(successCallback, errorCallback) {
-			const $loading = $('#loader');
-			$loading.hide();
-
-			$(document).ajaxStart(() => { $loading.show(); })
-				.ajaxStop(()  => { $loading.hide(); });
-
 			// if (window.indexedDB) {
 			// 	var request = indexedDB.open(window.location.hostname+'DB');
 			// 	request.onsuccess = function(event) {

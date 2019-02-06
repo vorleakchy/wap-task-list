@@ -142,7 +142,8 @@ tasksController = function () {
                     storageEngine.findById('task', $(evt.target).data().taskId, function (task) {
                         task.complete = true;
                         storageEngine.save('task', task, function () {
-                            tasksController.loadTasks();
+                            retrieveTasksServer();
+                            // tasksController.loadTasks();
                         }, errorLogger);
                     }, errorLogger);
                 });
@@ -153,7 +154,8 @@ tasksController = function () {
                         var task = $(taskPage).find('form').toObject();
                         storageEngine.save('task', task, function () {
                             $(taskPage).find('#tblTasks tbody').empty();
-                            tasksController.loadTasks();
+                            retrieveTasksServer();
+                            // tasksController.loadTasks();
                             clearTask();
                             $(taskPage).find('#taskCreation').addClass('not');
                         }, errorLogger);

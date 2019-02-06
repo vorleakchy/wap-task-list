@@ -102,6 +102,12 @@
 <script>
     function initScreen() {
         $(document).ready(function() {
+            const $loading = $('#loader');
+			$loading.hide();
+
+			$(document).ajaxStart(() => { $loading.show(); })
+				.ajaxStop(()  => { $loading.hide(); });
+
             tasksController.init($('#taskPage'), function() {
                 tasksController.loadTasks();
             });
