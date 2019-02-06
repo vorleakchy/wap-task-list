@@ -59,9 +59,14 @@
         </form>
     </section>
     <section>
+
+    </section>
+    <section>
         <table id="tblTasks">
             <colgroup>
-                <col width="30%">
+                <col width="10%">
+                <col width="10%">
+                <col width="10%">
                 <col width="15%">
                 <col width="15%">
                 <col width="10%">
@@ -69,6 +74,8 @@
             </colgroup>
             <thead>
             <tr>
+                <th>User</th>
+                <th>Team</th>
                 <th>Name</th>
                 <th>Due</th>
                 <th>Category</th>
@@ -95,6 +102,7 @@
             });
         });
     }
+
     if (window.indexedDB) {
         console.log("using indexedDB 111917kl");
         $.getScript( "resources/scripts/tasks-indexeddb.js" )
@@ -118,6 +126,8 @@
 
 <script id="taskRow" type="text/x-jQuery-tmpl">
 <tr>
+    <td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
+    <td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${requiredBy}">${requiredBy}</time></td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${category}</td>
