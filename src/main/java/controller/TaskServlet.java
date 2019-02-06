@@ -16,7 +16,14 @@ import java.util.List;
 @WebServlet("/TaskServlet")
 public class TaskServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        String taskJson = request.getParameter("task");
+        Gson g = new Gson();
+        Task task = g.fromJson(taskJson, Task.class);
 
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        out.write(g.toJson(task));
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

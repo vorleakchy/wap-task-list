@@ -93,6 +93,11 @@
     </section>
 </main>
 <footer>You have <span id="taskCount"></span> tasks</footer>
+
+<div id="loader">
+    <div class="inner-loader"></div>
+    Loading...
+</div>
 </body>
 <script>
     function initScreen() {
@@ -103,25 +108,33 @@
         });
     }
 
-    if (window.indexedDB) {
-        console.log("using indexedDB 111917kl");
-        $.getScript( "resources/scripts/tasks-indexeddb.js" )
-            .done(function( script, textStatus ) {
-                initScreen();
-            })
-            .fail(function( jqxhr, settings, exception ) {
-                console.log( 'Failed to load indexed db script' );
-            });
-    } else if (window.localStorage) {
-        console.log("using webstorage 111917kl");
-        $.getScript( "resources/scripts/tasks-webstorage.js" )
-            .done(function( script, textStatus ) {
-                initScreen();
-            })
-            .fail(function( jqxhr, settings, exception ) {
-                console.log( 'Failed to load web storage script' );
-            });
-    }
+    $.getScript( "resources/scripts/tasks-servlet.js" )
+        .done(function( script, textStatus ) {
+            initScreen();
+        })
+        .fail(function( jqxhr, settings, exception ) {
+            console.log( 'Failed to load tasks-servlet.js' );
+        });
+
+    // if (window.indexedDB) {
+    //     console.log("using indexedDB 111917kl");
+    //     $.getScript( "resources/scripts/tasks-indexeddb.js" )
+    //         .done(function( script, textStatus ) {
+    //             initScreen();
+    //         })
+    //         .fail(function( jqxhr, settings, exception ) {
+    //             console.log( 'Failed to load indexed db script' );
+    //         });
+    // } else if (window.localStorage) {
+    //     console.log("using webstorage 111917kl");
+    //     $.getScript( "resources/scripts/tasks-webstorage.js" )
+    //         .done(function( script, textStatus ) {
+    //             initScreen();
+    //         })
+    //         .fail(function( jqxhr, settings, exception ) {
+    //             console.log( 'Failed to load web storage script' );
+    //         });
+    // }
 </script>
 
 <script id="taskRow" type="text/x-jQuery-tmpl">
