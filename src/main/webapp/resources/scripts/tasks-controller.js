@@ -112,8 +112,6 @@ tasksController = function() {
                     function(evt) {
                         $(taskPage).find('#taskCreation').removeClass('not');
                         storageEngine.findById('task', $(evt.target).data().taskId, function(task) {
-                            console.log(task)
-                            window.task = task
                             $(taskPage).find('form').fromObject(task);
                         }, errorLogger);
                     }
@@ -149,6 +147,7 @@ tasksController = function() {
                 });
 
 
+                /* Filters */
                 $(taskPage).find('#priority-filter').on('change', function(evt) {
                     const priority = $(evt.target).val();
 
@@ -162,6 +161,19 @@ tasksController = function() {
                     }
                 });
 
+                $(taskPage).find('#user-filter').on('change', function(evt) {
+                    const userId = parseInt($(evt.target).val());
+
+                    storageEngine.findAll('task', function(tasks) {
+                        if (userId) {
+                            tasks = tasks.filter(task => task.user.id === userId);
+                        }
+
+                        $(taskPage).find('#tblTasks tbody').empty();
+                        loadTasksToTable(tasks);
+
+                    }, errorLogger);
+                });
 
 
                 initialised = true;
