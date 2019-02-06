@@ -1,6 +1,7 @@
 package db;
 
 import model.Task;
+import model.Team;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -29,7 +30,7 @@ public class TaskDAO implements DAO {
             try {
 
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id", task.getId());
+                jsonObject.put("id", (getLastTask()!=null)?getLastTask().getId()+1:0+1);
                 jsonObject.put("name", task.getTask());
                 jsonObject.put("dueDate", task.getDueDate());
                 jsonObject.put("category", task.getCategory());
@@ -56,8 +57,6 @@ public class TaskDAO implements DAO {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     @Override
@@ -116,7 +115,7 @@ public class TaskDAO implements DAO {
 
         if (getJSONArray() != null) {
 
-            return ((List<Task>) read()).stream().anyMatch((task) -> task.getId() == tsk.getId() ? true : false);
+            return ((List<Task>) read()).stream().anyMatch((task) -> task.getTask().equals(tsk.getTask()) ? true : false);
         }
 
         return false;
@@ -143,6 +142,17 @@ public class TaskDAO implements DAO {
         return jsonArray;
 
 
+    }
+
+    private Task getLastTask(){
+
+        if (getJSONArray() != null) {
+
+            return ((List<Task>) read()).get(tasks.size() - 1);
+
+        }
+
+        return null;
     }
 
 }
