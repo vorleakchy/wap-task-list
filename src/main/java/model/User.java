@@ -37,4 +37,18 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(obj==null){
+
+            return  false;
+        }
+        else{
+
+            return this.id==((User)obj).getId()?true:false;
+        }
+
+    }
 }

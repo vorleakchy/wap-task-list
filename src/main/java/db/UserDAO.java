@@ -12,7 +12,7 @@ import java.util.List;
 
 public class UserDAO implements DAO {
 
-    File file = new File("src/main/java/db/user.json");
+    final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/user.json");
 
     private List<User> users = new ArrayList<>();
 
