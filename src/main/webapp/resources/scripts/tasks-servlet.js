@@ -122,6 +122,13 @@ storageEngine = function() {
 	    	// };
 	    },
 	    findByProperty : function(type, propertyName, propertyValue, successCallback, errorCallback) {
+		    const param = {};
+		    param[propertyName] = propertyName;
+
+			$.get('TaskServlet', param)
+				.done(successCallback.bind())
+				.fail(errorCallback);
+
 	    	// if (!database) {
 	    	// 	errorCallback('storage_api_not_initialized', 'The storage engine has not been initialized');
 	    	// }

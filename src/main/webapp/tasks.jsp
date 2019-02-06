@@ -60,6 +60,22 @@
     </section>
     <section>
 
+    <section>
+        <fieldset>
+            <legend>Retrieve</legend>
+            <div>
+                <label>Priority</label> <select id="filter-priority">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </fieldset>
+    </section>
+
     </section>
     <section>
         <table id="tblTasks">

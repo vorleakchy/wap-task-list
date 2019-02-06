@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,44 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1877">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,12 +46,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/tasks.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/GsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/tasks.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TaskFilterServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
       </list>
     </option>
   </component>
@@ -236,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549458788442" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549468930118" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -370,7 +336,7 @@
       <workItem from="1549310962119" duration="3508000" />
       <workItem from="1549394681251" duration="5603000" />
       <workItem from="1549417518414" duration="160000" />
-      <workItem from="1549418029692" duration="14270000" />
+      <workItem from="1549418029692" duration="18435000" />
     </task>
     <servers />
   </component>
@@ -407,7 +373,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16515000" />
+    <option name="totallyTimeSpent" value="20680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,19 +386,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70573246" visible="true" weight="0.17453505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70342207" visible="true" weight="0.17453505" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.29441625" side_tool="true" weight="0.1702432" />
+      <window_info id="Web" order="7" sideWeight="0.29657796" side_tool="true" visible="true" weight="0.17453505" />
+      <window_info anchor="bottom" id="Duplicate detector" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6322148" visible="true" weight="0.24713376" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" weight="0.24713376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-serialization.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -509,34 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,16 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/user.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -584,31 +509,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1877">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GsonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="205">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskFilterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -161,6 +161,15 @@ tasksController = function () {
                         }, errorLogger);
                     }
                 });
+
+
+                $(taskPage).find('#filter-priority').on('change', function (evt) {
+                    storageEngine.findByProperty('task', 'priority', $(evt.target).val(), function (data) {
+                        tasksController.loadServerTasks(data);
+                    }, errorLogger);
+                });
+
+
                 initialised = true;
             }
         },
