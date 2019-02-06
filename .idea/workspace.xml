@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="taskListProject:war exploded" />
+      <artifact name="taskListProject:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="cbf29d07-d72a-4386-a70c-6508378b1372" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" afterDir="false" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
@@ -83,6 +92,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,7 +106,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
+      <find>toObject</find>
+      <find>taskServlet</find>
+      <find>retrieveTasksServer</find>
+      <find>/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,18 +118,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Task.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/db/team.json" />
-        <option value="$PROJECT_DIR$/src/test/java/DAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/TeamServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/tasks.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/tasks.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TaskFilterServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
       </list>
     </option>
   </component>
@@ -125,17 +137,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-15" />
-    <option name="width" value="1298" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,77 +153,82 @@
         <subPane>
           <expand>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -281,6 +291,36 @@
               <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -291,18 +331,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549400338065" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549468930118" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources\scripts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp" />
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources\styles" />
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources" />
+=======
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/scripts" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,67 +359,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tom8523">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.37">
+    <configuration name="GsonTest.testFromJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskListProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DAOTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DAOTest.testRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taskListProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DAOTest" />
-      <option name="METHOD_NAME" value="testRead" />
+      <option name="MAIN_CLASS_NAME" value="GsonTest" />
+      <option name="METHOD_NAME" value="testFromJson" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <configuration name="GsonTest.testToJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskListProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GsonTest" />
+      <option name="METHOD_NAME" value="testToJson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tom8523" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <configuration name="Tomcat 8.5.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="taskListProject:war exploded">
+        <artifact name="taskListProject:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/project" />
+            <option name="CONTEXT_PATH" value="/project/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_taskListProject" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_wap-task-list" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -385,7 +398,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63644" />
+        <option name="DEBUG_PORT" value="54486" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -435,10 +448,11 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="taskListProject:war exploded" />
+          <artifact name="taskListProject:war" />
         </option>
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -453,10 +467,12 @@
       <item itemvalue="JUnit.DAOTest.testRead" />
       <item itemvalue="Tomcat Server.tom8523" />
     </list>
+=======
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DAOTest" />
-        <item itemvalue="JUnit.DAOTest.testRead" />
+        <item itemvalue="JUnit.GsonTest.testFromJson" />
+        <item itemvalue="JUnit.GsonTest.testToJson" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +481,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="" />
+      <changelist id="cbf29d07-d72a-4386-a70c-6508378b1372" name="Default Changelist" comment="" />
       <created>1511128409524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -474,69 +490,84 @@
       <workItem from="1511193708716" duration="466000" />
       <workItem from="1549310962119" duration="3508000" />
       <workItem from="1549394681251" duration="5603000" />
+      <workItem from="1549417518414" duration="160000" />
+      <workItem from="1549418029692" duration="18435000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DAOTest - 2019.02.05 at 13h 41m 43s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 39m 17s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 41m 50s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 39m 26s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 42m 53s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 40m 51s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 43m 23s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 41m 22s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 45m 07s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 45m 49s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 46m 23s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 46m 18s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 50m 10s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 47m 22s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 13h 51m 12s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 47m 31s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 14h 09m 56s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 47m 35s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DAOTest - 2019.02.05 at 14h 11m 16s.xml">
-      <configuration name="DAOTest" configurationId="JUnit" />
+    <history-entry file="GsonTest_testFromJson - 2019.02.05 at 22h 47m 40s.xml">
+      <configuration name="GsonTest.testFromJson" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="24445000" />
+=======
+    <option name="totallyTimeSpent" value="20680000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48775893" visible="true" weight="0.2758389" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70342207" visible="true" weight="0.17453505" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.51224107" side_tool="true" weight="0.28322148" />
+      <window_info id="Web" order="7" sideWeight="0.29657796" side_tool="true" visible="true" weight="0.17453505" />
+      <window_info anchor="bottom" id="Duplicate detector" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" visible="true" weight="0.24787535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" weight="0.24713376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3298731" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32866243" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36778525" side_tool="true" weight="0.24787535" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3299363" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.32738853" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -555,185 +586,194 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6392">
+          <caret line="376" column="17" selection-start-line="376" selection-start-column="17" selection-end-line="376" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/indexBU.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/date.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery.validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-2.0.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918" />
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-serialization.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-tmpl.js">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="169">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        <state relative-caret-position="458">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/TeamDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="16503" column="13" selection-start-line="16503" selection-start-column="13" selection-end-line="16503" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/team.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/TeamDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/indexBU.jsp">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="method#equals#0;class#Team#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/TeamServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/user.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-384">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="-66">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="85">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+=======
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="278">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+=======
+        <state relative-caret-position="204">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskFilterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+<<<<<<< HEAD
+        <state relative-caret-position="392">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="153">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="307">
           <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+=======
+        <state relative-caret-position="224">
+          <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+>>>>>>> 98a395b295e92ee4cbf8e39f9649949d48216fac
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

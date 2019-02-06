@@ -135,3 +135,42 @@ label.error {
 .taskCompleted {
 	text-decoration: line-through;
 }
+
+/* Loading... */
+#loader {
+	padding: 5px;
+	background-color: #333333;
+	color: #fff;
+	position: absolute;
+	border-radius: 2px;
+	line-height: normal;
+    top: 0;
+	left: 0;
+}
+
+.inner-loader {
+	border: 6px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 6px solid #53777a;
+	width: 30px;
+	height: 30px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+fieldset {
+    border: 1px solid #eee;
+    padding: 10px;
+    width: 88%;
+}

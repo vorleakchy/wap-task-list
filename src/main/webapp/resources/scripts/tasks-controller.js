@@ -12,7 +12,7 @@ tasksController = function () {
      */
     function retrieveTeamsFromServer() {
 
-        const teamSelector = $('#teamSelector');
+        var teamSelector = $('#teamSelector');
 
         $.ajax({
             'url': "TeamServlet",
@@ -142,7 +142,8 @@ tasksController = function () {
                     storageEngine.findById('task', $(evt.target).data().taskId, function (task) {
                         task.complete = true;
                         storageEngine.save('task', task, function () {
-                            tasksController.loadTasks();
+                            retrieveTasksServer();
+                            // tasksController.loadTasks();
                         }, errorLogger);
                     }, errorLogger);
                 });
@@ -153,12 +154,22 @@ tasksController = function () {
                         var task = $(taskPage).find('form').toObject();
                         storageEngine.save('task', task, function () {
                             $(taskPage).find('#tblTasks tbody').empty();
-                            tasksController.loadTasks();
+                            retrieveTasksServer();
+                            // tasksController.loadTasks();
                             clearTask();
                             $(taskPage).find('#taskCreation').addClass('not');
                         }, errorLogger);
                     }
                 });
+
+
+                $(taskPage).find('#filter-priority').on('change', function (evt) {
+                    storageEngine.findByProperty('task', 'priority', $(evt.target).val(), function (data) {
+                        tasksController.loadServerTasks(data);
+                    }, errorLogger);
+                });
+
+
                 initialised = true;
             }
         },

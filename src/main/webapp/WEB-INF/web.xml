@@ -5,6 +5,6 @@
          version="3.1">
 
     <welcome-file-list>
-        <welcome-file>tasks.html</welcome-file>
+        <welcome-file>tasks.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
