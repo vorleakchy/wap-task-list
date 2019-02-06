@@ -146,9 +146,16 @@ tasksController = function() {
 
 
                 $(taskPage).find('#priority-filter').on('change', function(evt) {
-                    storageEngine.findByProperty('task', 'priority', $(evt.target).val(), function(tasks) {
-                        loadTasksToTable(tasks);
-                    }, errorLogger);
+                    const priority = $(evt.target).val();
+
+                    if (priority) {
+                        storageEngine.findByProperty('task', 'priority', priority, function(tasks) {
+                            loadTasksToTable(tasks);
+                        }, errorLogger);
+                    } else {
+                        $(taskPage).find('#tblTasks tbody').empty();
+                        tasksController.loadTasks();
+                    }
                 });
 
 
