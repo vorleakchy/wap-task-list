@@ -86,7 +86,6 @@ public class TaskDAO implements DAO {
                 String category = String.valueOf(teamObject.get("category").toString());
                 int priority = Integer.parseInt(teamObject.get("priority").toString());
 
-
                 Task task = new Task(id, name, date, category, priority);
 
                 tasks.add(task);

@@ -137,12 +137,18 @@ tasksController = function () {
             if (initialised) {
                 callback()
             } else {
+
+                /**
+                 * Configures the storage engine from here
+                 */
                 taskPage = page;
                 storageEngine.init(function () {
                     storageEngine.initObjectStore('task', function () {
                         callback();
                     }, errorLogger)
                 }, errorLogger);
+
+
                 $(taskPage).find('[required="required"]').prev('label').append('<span>*</span>').children('span').addClass('required');
                 $(taskPage).find('tbody tr:even').addClass('even');
 
