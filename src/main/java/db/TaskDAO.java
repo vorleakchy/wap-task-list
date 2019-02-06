@@ -30,7 +30,7 @@ public class TaskDAO implements DAO {
             try {
 
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id", getLastTask().getId()+1);
+                jsonObject.put("id", (getLastTask()!=null)?getLastTask().getId()+1:0+1);
                 jsonObject.put("name", task.getTask());
                 jsonObject.put("dueDate", task.getDueDate());
                 jsonObject.put("category", task.getCategory());
@@ -57,8 +57,6 @@ public class TaskDAO implements DAO {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     @Override
@@ -148,8 +146,13 @@ public class TaskDAO implements DAO {
 
     private Task getLastTask(){
 
-       return ((List<Task>)read()).get(tasks.size()-1);
+        if (getJSONArray() != null) {
 
+            return ((List<Task>) read()).get(tasks.size() - 1);
+
+        }
+
+        return null;
     }
 
 }
