@@ -146,9 +146,16 @@ tasksController = function() {
 
 
                 $(taskPage).find('#priority-filter').on('change', function(evt) {
-                    storageEngine.findByProperty('task', 'priority', $(evt.target).val(), function(tasks) {
-                        loadTasksToTable(tasks);
-                    }, errorLogger);
+                    const priority = $(evt.target).val();
+
+                    if (priority) {
+                        storageEngine.findByProperty('task', 'priority', priority, function(tasks) {
+                            loadTasksToTable(tasks);
+                        }, errorLogger);
+                    } else {
+                        $(taskPage).find('#tblTasks tbody').empty();
+                        tasksController.loadTasks();
+                    }
                 });
 
 
@@ -176,7 +183,7 @@ tasksController = function() {
             $(taskPage).find('#tblTasks tbody').empty();
             storageEngine.findAll('task', function(tasks) {
                 tasks.sort(function(o1, o2) {
-                    return Date.parse(o1.requiredBy).compareTo(Date.parse(o2.requiredBy));
+                    return Date.parse(o1.dueDate).compareTo(Date.parse(o2.dueDate));
                 });
                 $.each(tasks, function(index, task) {
                     if (!task.complete) {
