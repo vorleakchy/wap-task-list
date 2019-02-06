@@ -31,6 +31,8 @@ public class TaskServlet extends HttpServlet {
         Gson g = new Gson();
         Task task = g.fromJson(taskJson, Task.class);
 
+        mockData.addTask(task);
+
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         out.write(g.toJson(task));
@@ -45,6 +47,8 @@ public class TaskServlet extends HttpServlet {
         List<Task> taskList = mockData.retrieveTaskList();
 
         JSONtasks = new Gson().toJson(taskList);
+
+        System.out.println(JSONtasks);
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");

@@ -17,7 +17,7 @@ public class TaskDAO implements DAO {
 
     final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/task.json");
 
-    private List<Task> tasks = new ArrayList<>();
+    private List<Task> tasks;
 
     @Override
     public void insert(Object obj) {
@@ -72,6 +72,8 @@ public class TaskDAO implements DAO {
 
     @Override
     public Object read() {
+
+        tasks=new ArrayList<>();
 
         if (getJSONArray() != null) {
 
