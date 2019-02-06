@@ -20,22 +20,26 @@
 		<form id="taskForm">
 			<input type="hidden" name="id"/>
 			<div>
-				<label>User</label> <input type="text"
-										   name="user" class="large" placeholder="Enter user" maxlength="200"  />
-			</div>
-			<div>
 				<label>Task</label> <input type="text" required="required"
 					name="task" class="large" placeholder="Breakfast at Tiffanys" maxlength="200"  />
 			</div>
 			<div>
 				<label>Required by</label> <input type="date" required="required"
-					name="requiredBy" />
+					name="dueDate" />
 			</div>
 			<div>
 				<label>Category</label> <select name="category">
 					<option value="Personal">Personal</option>
 					<option value="Work">Work</option>
 				</select>
+			</div>
+			<div>
+				<label>User</label> <select name="user">
+				<option value='{"id":1,"name":"user1","team":{"id":1,"name":"teamA"}}'>user1</option>
+				<option value='{"id":2,"name":"user2","team":{"id":1,"name":"teamA"}}'>user2</option>
+				<option value='{"id":3,"name":"user3","team":{"id":2,"name":"teamB"}}'>user3</option>
+				<option value='{"id":4,"name":"user4","team":{"id":2,"name":"teamB"}}'>user4</option>
+			</select>
 			</div>
 			<div>
 				<label>Priority</label> <select name="priority">
@@ -56,16 +60,34 @@
     <section>
         <fieldset>
             <legend>Filters</legend>
-            <div>
-                <label>Priority</label> <select id="priority-filter">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            </div>
+            <div id="filters">
+                <div>
+                    <label>Priority</label> <select id="priority-filter">
+                        <option value="">All</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>User</label> <select id="user-filter">
+                        <option value="">All</option>
+                        <option value="1">user1</option>
+                        <option value="2">user2</option>
+                        <option value="3">user3</option>
+                        <option value="4">user4</option>
+                    </select>
+                </div>
+				<div>
+					<label>Team</label> <select id="team-filter">
+					<option value="">All</option>
+					<option value="1">teamA</option>
+					<option value="2">teamB</option>
+				</select>
+				</div>
+			</div>
         </fieldset>
     </section>
 
@@ -101,10 +123,21 @@
 	</section>
 	</main>
 	<footer>You have <span id="taskCount"></span> tasks</footer>
+
+	<div id="loader">
+		<div class="inner-loader"></div>
+		Loading...
+	</div>
 </body>
 <script>
 function initScreen() {
 	$(document).ready(function() {
+		const $loading = $('#loader');
+		$loading.hide();
+
+		$(document).ajaxStart(() => { $loading.show(); })
+				.ajaxStop(()  => { $loading.hide(); });
+
 		tasksController.init($('#taskPage'), function() {
 			tasksController.loadTasks();
 		});		
