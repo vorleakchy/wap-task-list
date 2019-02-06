@@ -147,7 +147,7 @@ tasksController = function() {
                 });
 
 
-                /* Filters */
+                /* Priority Filter */
                 $(taskPage).find('#priority-filter').on('change', function(evt) {
                     const priority = $(evt.target).val();
 
@@ -161,6 +161,7 @@ tasksController = function() {
                     }
                 });
 
+                /* User Filter */
                 $(taskPage).find('#user-filter').on('change', function(evt) {
                     const userId = parseInt($(evt.target).val());
 
@@ -174,6 +175,22 @@ tasksController = function() {
 
                     }, errorLogger);
                 });
+
+                /* Team Filter */
+                $(taskPage).find('#team-filter').on('change', function(evt) {
+                    const teamId = parseInt($(evt.target).val());
+
+                    storageEngine.findAll('task', function(tasks) {
+                        if (teamId) {
+                            tasks = tasks.filter(task => task.user.team.id === teamId);
+                        }
+
+                        $(taskPage).find('#tblTasks tbody').empty();
+                        loadTasksToTable(tasks);
+
+                    }, errorLogger);
+                });
+
 
 
                 initialised = true;
