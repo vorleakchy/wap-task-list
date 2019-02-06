@@ -3,12 +3,14 @@ package utility;
 import db.UserDAO;
 import model.*;
 import db.DAO;
+import db.TaskDAO;
 import db.TeamDAO;
 import model.Task;
 import model.Team;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * utility class to return mock data for testing
@@ -36,28 +38,23 @@ public class MockData {
     }
 
     public ArrayList<Task> taskList = new ArrayList<>();
-    DAO dao;
+    DAO taskDAO = new TaskDAO();
+    DAO teamDAO = new TeamDAO();
 
-    public ArrayList<Task> retrieveTaskList() {
+    public List<Task> retrieveTaskList() {
 
-        taskList.add(new Task(101, "first task", "2017-11-19", "Personal", 1,2));
-        taskList.add(new Task(102, "second task", "2017-11-23", "Work", 2,2));
-        taskList.add(new Task(103, "third task", "2017-12-19", "Work", 3,1 ));
-
-        return taskList;
+        return (List<Task>) taskDAO.read();
     }
 
-    public List<Task> retrieveTasks() {
+    public void addTask(Task task) {
 
-        return null;
+        taskDAO.insert(task);
 
     }
 
     public List<Team> retrieveTeams() {
 
-        dao = new TeamDAO();
-
-        return (List<Team>) dao.read();
+        return (List<Team>) teamDAO.read();
 
     }
 

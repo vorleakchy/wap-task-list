@@ -1,3 +1,5 @@
+package db;
+
 import db.DAO;
 import db.TeamDAO;
 import model.Team;
@@ -8,11 +10,11 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DAOTest {
+public class TeamDAOTest {
 
     DAO dao = new TeamDAO();
 
-    public DAOTest() {
+    public TeamDAOTest() {
 
     }
 
@@ -26,7 +28,7 @@ public class DAOTest {
     @Test
     public void testRead() {
 
-        //assertEquals(new ArrayList<Team>(),dao.read());
+       // assertEquals(null,dao.read());
     }
 
     @Test

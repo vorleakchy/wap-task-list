@@ -12,11 +12,12 @@ import java.util.List;
 
 public class TeamDAO implements DAO {
 
-    File file = new File("src/main/java/db/team.json");
+    final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/team.json");
 
     private List<Team> teams = new ArrayList<>();
 
     public TeamDAO() {
+
 
     }
 
@@ -28,47 +29,23 @@ public class TeamDAO implements DAO {
 
         if (!teamExists(team)) {
 
-            try {
+            JSONObject jsonObject = new JSONObject();
 
-                JSONObject jsonObject = new JSONObject();
+            jsonObject.put("id", team.getId());
+            jsonObject.put("name", team.getName());
 
-                jsonObject.put("id", team.getId());
-                jsonObject.put("name", team.getName());
+            JSONArray jsonArray = getJSONArray();
 
-                JSONArray jsonArray = getJSONArray();
+            if (jsonArray == null) {
 
-                if (jsonArray == null) {
-
-                    jsonArray = new JSONArray();
-                }
-
-                jsonArray.add(jsonObject);
-
-                System.out.println(jsonArray);
-
-                PrintWriter pw = new PrintWriter(file);
-                pw.write(jsonArray.toJSONString());
-
-                pw.flush();
-                pw.close();
-
-            } catch (IOException e) {
-                e.printStackTrace();
+                jsonArray = new JSONArray();
             }
+
+            jsonArray.add(jsonObject);
+
+            writeToDBFile(file, jsonArray.toJSONString());
+
         }
-
-    }
-
-    /*Update a Team from the DAO*/
-    @Override
-    public void update() {
-
-    }
-
-    /*Delete a Team from the DAO*/
-    @Override
-    public void delete(int id) {
-
 
     }
 
@@ -78,9 +55,9 @@ public class TeamDAO implements DAO {
 
         if (getJSONArray() != null) {
 
-            getJSONArray().forEach((jobj) -> {
+            getJSONArray().forEach((obj) -> {
 
-                JSONObject teamObject = (JSONObject) jobj;
+                JSONObject teamObject = (JSONObject) obj;
 
                 int id = Integer.parseInt(teamObject.get("id").toString());
                 String name = String.valueOf(teamObject.get("name").toString());
@@ -93,6 +70,24 @@ public class TeamDAO implements DAO {
         }
 
         return teams;
+    }
+
+
+    /*Update a Team from the DAO*/
+    @Override
+    public void update() {
+
+        /**
+         * To be implemented in the future
+         */
+    }
+
+    /*Delete a Team from the DAO*/
+    @Override
+    public void delete(int id) {
+        /**
+         * To be implemented in the future
+         */
     }
 
     /*Returns the number of teams in the DAO*/
@@ -144,5 +139,18 @@ public class TeamDAO implements DAO {
 
     }
 
+    private void writeToDBFile(File file, String data) {
+
+        PrintWriter pw = null;
+        try {
+            pw = new PrintWriter(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        pw.write(data);
+
+        pw.flush();
+        pw.close();
+    }
 
 }
