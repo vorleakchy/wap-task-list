@@ -3,23 +3,23 @@ package model;
 public class User {
     private int id;
     private String name;
-    private int idTeam;
+    private Team team;
 
     public User(){
     }
 
-    public User(int id,String name,int idteam){
+    public User(int id,String name,Team team){
         this.id=id;
         this.name=name;
-        this.idTeam=idteam;
+        this.team=team;
     }
 
     public int getId() {
         return id;
     }
 
-    public int getIdTeam() {
-        return idTeam;
+    public Team getIdTeam() {
+        return team;
     }
 
     public String getName() {
@@ -30,11 +30,25 @@ public class User {
         this.id = id;
     }
 
-    public void setIdTeam(int idTeam) {
-        this.idTeam = idTeam;
+    public void setTeam(Team obteam) {
+        this.team = obteam;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(obj==null){
+
+            return  false;
+        }
+        else{
+
+            return this.id==((User)obj).getId()?true:false;
+        }
+
     }
 }
