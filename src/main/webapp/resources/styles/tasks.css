@@ -141,11 +141,11 @@ label.error {
 	padding: 5px;
 	background-color: #333333;
 	color: #fff;
-	position: absolute;
+	position: fixed;
 	border-radius: 2px;
 	line-height: normal;
-    top: 0;
-	left: 0;
+    bottom: 10px;
+	left: 10px;
 }
 
 .inner-loader {
