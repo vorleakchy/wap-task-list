@@ -21,8 +21,7 @@ class TaskDAOTest {
     @Test
     void insert() {
 
-        taskDAO.insert(new Task(1,"Create DAO",new Date(2019,02,12).toString(),"Tasks",1));
-
+        taskDAO.insert(new Task(2,"Create DAO",new Date(2019,02,12).toString(),"Tasks",1,2));
 
     }
 
@@ -33,7 +32,7 @@ class TaskDAOTest {
     @Test
     void size() {
 
-        assertEquals(1,taskDAO.size());
+        assertEquals(2,taskDAO.size());
 
     }
 

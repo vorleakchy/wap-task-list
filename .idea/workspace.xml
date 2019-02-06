@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taskListProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taskListProject_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/TaskDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/TaskDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utility/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/MockData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/TeamDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/task.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/task.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/db/TaskDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/db/TaskDAOTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,10 +26,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/TeamDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="261">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/TeamDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-384">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#teamExists#0;class#TeamDAO#0" />
@@ -50,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="357">
+              <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+              <folding>
+                <element signature="e#2741#3158#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="1234" column="4" selection-start-line="1234" selection-start-column="4" selection-end-line="1234" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -88,10 +120,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="181">
+              <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#init#0;class#TaskServlet#0" />
               </folding>
             </state>
           </provider>
@@ -130,13 +163,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/teams-controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Task.java" />
-        <option value="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/DAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
         <option value="$PROJECT_DIR$/src/main/java/db/TaskDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" />
+        <option value="$PROJECT_DIR$/target/classes/db/task.json" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
       </list>
     </option>
   </component>
@@ -261,6 +295,54 @@
             </path>
             <path>
               <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -273,7 +355,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549427333843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549431407764" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/db" />
@@ -531,26 +613,11 @@
       <workItem from="1511128414832" duration="14352000" />
       <workItem from="1511193708716" duration="466000" />
       <workItem from="1549310962119" duration="3508000" />
-      <workItem from="1549394681251" duration="21284000" />
+      <workItem from="1549394681251" duration="25366000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DAOTest_testRead - 2019.02.05 at 17h 03m 38s.xml">
-      <configuration name="DAOTest.testRead" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MockDataTest_retrieveTeams - 2019.02.05 at 17h 04m 41s.xml">
-      <configuration name="MockDataTest.retrieveTeams" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MockDataTest_retrieveTeams - 2019.02.05 at 17h 30m 10s.xml">
-      <configuration name="MockDataTest.retrieveTeams" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaskDAOTest_insert - 2019.02.05 at 21h 38m 05s.xml">
-      <configuration name="TaskDAOTest.insert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaskDAOTest - 2019.02.05 at 21h 40m 54s.xml">
-      <configuration name="TaskDAOTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TaskDAOTest - 2019.02.05 at 21h 41m 25s.xml">
       <configuration name="TaskDAOTest" configurationId="JUnit" />
     </history-entry>
@@ -566,9 +633,24 @@
     <history-entry file="DAOTest - 2019.02.05 at 21h 50m 10s.xml">
       <configuration name="DAOTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TeamDAOTest - 2019.02.05 at 22h 28m 38s.xml">
+      <configuration name="TeamDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamDAOTest - 2019.02.05 at 22h 28m 46s.xml">
+      <configuration name="TeamDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskDAOTest - 2019.02.05 at 22h 28m 55s.xml">
+      <configuration name="TaskDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskDAOTest - 2019.02.05 at 22h 33m 59s.xml">
+      <configuration name="TaskDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskDAOTest - 2019.02.05 at 22h 34m 11s.xml">
+      <configuration name="TaskDAOTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39884000" />
+    <option name="totallyTimeSpent" value="43966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,6 +663,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48775893" visible="true" weight="0.2758389" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -593,7 +676,7 @@
       <window_info anchor="bottom" id="Duplicate detector" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" visible="true" weight="0.24787535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" weight="0.24787535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3654391" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -603,7 +686,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36778525" side_tool="true" weight="0.24787535" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -805,30 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/TeamDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -837,23 +896,6 @@
             <element signature="e#1432#1433#0" expanded="true" />
             <element signature="e#1468#1469#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
@@ -871,12 +913,78 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/db/TeamDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-384">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#teamExists#0;class#TeamDAO#0" />
             <element signature="method#getJSONArray#0;class#TeamDAO#0" />
             <element signature="method#writeToDBFile#0;class#TeamDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/TeamDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/db/task.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="144" selection-start-column="144" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/db/task.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#TaskServlet#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="1234" column="4" selection-start-line="1234" selection-start-column="4" selection-end-line="1234" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="e#2741#3158#0" />
           </folding>
         </state>
       </provider>

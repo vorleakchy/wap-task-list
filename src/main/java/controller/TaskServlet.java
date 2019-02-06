@@ -11,11 +11,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Type;
 import java.util.List;
 
 @WebServlet("/TaskServlet")
 public class TaskServlet extends HttpServlet {
+
+    MockData mockData = null;
+
+    @Override
+    public void init() throws ServletException {
+
+        mockData = new MockData();
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        /*
+        Task task =new Gson().fromJson(request.getParameter("task"),Task.class);
+        mockData.addTask(task);
+        */
 
     }
 
@@ -24,7 +39,7 @@ public class TaskServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String JSONtasks;
-        List<Task> taskList = new MockData().retrieveTaskList();
+        List<Task> taskList = mockData.retrieveTaskList();
 
         JSONtasks = new Gson().toJson(taskList);
 

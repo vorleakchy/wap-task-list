@@ -19,21 +19,23 @@ import java.util.List;
 public class MockData {
 
     public ArrayList<Task> taskList = new ArrayList<>();
-    DAO dao;
+    DAO taskDAO = new TaskDAO();
+    DAO teamDAO = new TeamDAO();
 
     public List<Task> retrieveTaskList() {
 
-        dao = new TaskDAO();
-
-        return (List<Task>) dao.read();
+        return (List<Task>) taskDAO.read();
     }
 
+    public void addTask(Task task) {
+
+        taskDAO.insert(task);
+
+    }
 
     public List<Team> retrieveTeams() {
 
-        dao = new TeamDAO();
-
-        return (List<Team>) dao.read();
+        return (List<Team>) teamDAO.read();
 
     }
 

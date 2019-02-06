@@ -6,8 +6,11 @@ tasksController = function () {
 
     var taskPage;
     var initialised = false;
+    const SORT_TASK_ORDER_ASCEND = "ascend", SORT_TASK_ORDER_DESCEND = "descend";
+    let toggleOrder = SORT_TASK_ORDER_ASCEND;
 
-    let serverTaskData=null;
+    let serverTaskData = null;
+
     /**
      * makes json call to server to get task list.
      * currently just testing this and writing return value out to console
@@ -31,7 +34,7 @@ tasksController = function () {
      */
     function displayTasksServer(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
         console.log(data);
-        serverTaskData=data;
+        serverTaskData = data;
         tasksController.loadServerTasks(data);
     }
 
@@ -56,16 +59,77 @@ tasksController = function () {
     }
 
     /***
-     * sort tasks by team id
+     * filter tasks by team id
      *
      * Gets a list of all tasks from the server side sent through as JSON data,
      * Performs filter functions on it and returns only those whose users belong
      * to the Team specified by ID in the Params.
+     * @param id
      */
-    function sortByTeam(id) {
+    function filterByTeam(id) {
 
-       serverTaskData.filter((t)=>t.user.teamID==id?true:false).toArray();
+        serverTaskData = serverTaskData.filter((t) => t.user.teamID == id ? true : false).toArray();
 
+    }
+
+    /**
+     * Performs sort operations on all tasks and returns the list as per the
+     * sort requirement.
+     * @param requirement
+     */
+    function sortTasksByTeam(requirement) {
+
+        switch (requirement) {
+            case SORT_TASK_ORDER_ASCEND:
+                serverTaskData = sortData(serverTaskData);
+                break;
+            case  SORT_TASK_ORDER_DESCEND:
+                serverTaskData = sortData(serverTaskData).reverse();
+                break;
+        }
+    }
+
+    //Toggle between the order of sorting using the specified requirement
+    function toggleSortTasksByTeam() {
+
+        if (toggleOrder == SORT_TASK_ORDER_ASCEND) {
+
+            toggleOrder = SORT_TASK_ORDER_DESCEND
+        } else {
+
+            toggleOrder = SORT_TASK_ORDER_ASCEND;
+        }
+
+        sortTasksByTeam(toggleOrder);
+    }
+
+    /**
+     * Sorts an array and returns a sorted version of itself.
+     * @param data
+     * @returns {array}
+     */
+    function sortData(data) {
+
+        function swap(arr, a, b) {
+
+            let c = arr[a];
+            arr[a] = arr[b];
+            arr[b] = c;
+
+            return arr;
+        }
+
+        for (let i = 0; i < data.length; i++) {
+
+            for (let k = i + 1; k < data.length; k++) {
+
+                if (data[i] > data[k]) {
+
+                    data = swap(data, i, k);
+                }
+            }
+        }
+        return data;
     }
 
     return {
@@ -180,4 +244,5 @@ tasksController = function () {
             }, errorLogger);
         }
     }
-}();
+}
+();
