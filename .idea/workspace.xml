@@ -7,22 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TaskServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TaskServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/TaskDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/TaskDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/task.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/task.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utility/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/MockData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/controller/TaskServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/controller/TaskServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/db/TaskDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/db/TaskDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/utility/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/utility/MockData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/teams-controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/styles/tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/styles/tasks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/db/TaskDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/db/TaskDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state relative-caret-position="3288">
+              <caret line="263" column="3" lean-forward="true" selection-start-line="263" selection-start-column="3" selection-end-line="263" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -158,10 +143,10 @@
         <option value="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" />
         <option value="$PROJECT_DIR$/target/classes/db/task.json" />
         <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
       </list>
     </option>
   </component>
@@ -346,7 +331,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549476285663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549476555437" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/db" />
@@ -645,7 +630,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50857000" />
+    <option name="totallyTimeSpent" value="51075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -966,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        <state relative-caret-position="3288">
+          <caret line="263" column="3" lean-forward="true" selection-start-line="263" selection-start-column="3" selection-end-line="263" selection-end-column="3" />
         </state>
       </provider>
     </entry>
