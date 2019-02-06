@@ -23,7 +23,7 @@ class TaskDAOTest {
     @Test
     void insert() {
 
-        taskDAO.insert(new Task(2,"Create a task",new Date(2019,02,12).toString(),"Tasks",1,new User(1,"Vorleak",new Team(1,"green"))));
+        taskDAO.insert(new Task(2,"Create another task",new Date(2019,02,12).toString(),"Tasks",1,new User(1,"Steven",new Team(1,"green"))));
 
     }
 

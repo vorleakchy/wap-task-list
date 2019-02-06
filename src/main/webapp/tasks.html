@@ -20,6 +20,10 @@
 		<form id="taskForm">
 			<input type="hidden" name="id"/>
 			<div>
+				<label>User</label> <input type="text"
+										   name="user" class="large" placeholder="Enter user" maxlength="200"  />
+			</div>
+			<div>
 				<label>Task</label> <input type="text" required="required"
 					name="task" class="large" placeholder="Breakfast at Tiffanys" maxlength="200"  />
 			</div>
@@ -68,7 +72,9 @@
 	<section>
 		<table id="tblTasks">
 			<colgroup>
-				<col width="40%">
+				<col width="10%">
+				<col width="10%">
+				<col width="20%">
 				<col width="15%">
 				<col width="15%">
 				<col width="15%">
@@ -76,7 +82,9 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>Name</th>
+					<th>User</th>
+					<th>Team</th>
+					<th>Task</th>
 					<th>Due</th>
 					<th>Category</th>
 					<th>Priority</th>
@@ -125,8 +133,10 @@ if (window.indexedDB) {
 
 <script id="taskRow" type="text/x-jQuery-tmpl">
 <tr>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}>${user.name}</td>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}>${user.team.name}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
-	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${requiredBy}">${requiredBy}</time></td>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${dueDate}">${dueDate}</time></td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${category}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${priority}</td>
 	<td>
