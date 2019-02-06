@@ -135,6 +135,8 @@ tasksController = function() {
                     evt.preventDefault();
                     if ($(taskPage).find('form').valid()) {
                         var task = $(taskPage).find('form').toObject();
+                        task.user = JSON.parse(task.user);
+
                         storageEngine.save('task', task, function() {
                             $(taskPage).find('#tblTasks tbody').empty();
                             tasksController.loadTasks();
