@@ -76,22 +76,22 @@ public class UserDAO implements DAO {
     @Override
     public Object read() {
 
-        if (getJSONArray() != null) {
-
-            getJSONArray().forEach((jobj) -> {
-
-                JSONObject userObject = (JSONObject) jobj;
-
-                int id = Integer.parseInt(userObject.get("id").toString());
-                String name = String.valueOf(userObject.get("name").toString());
-                int idteam = Integer.parseInt(userObject.get("idTeam").toString());
-
-                User user = new User(id, name,idteam);
-
-                users.add(user);
-
-            });
-        }
+//        if (getJSONArray() != null) {
+//
+//            getJSONArray().forEach((jobj) -> {
+//
+//                JSONObject userObject = (JSONObject) jobj;
+//
+//                int id = Integer.parseInt(userObject.get("id").toString());
+//                String name = String.valueOf(userObject.get("name").toString());
+//                int idteam = Integer.parseInt(userObject.get("idTeam").toString());
+//
+//                User user = new User(id, name,idteam);
+//
+//                users.add(user);
+//
+//            });
+//        }
 
         return users;
     }

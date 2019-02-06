@@ -2,6 +2,7 @@ package db;
 
 import model.Task;
 import model.Team;
+import model.User;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -30,11 +31,12 @@ public class TaskDAO implements DAO {
             try {
 
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id", (getLastTask()!=null)?getLastTask().getId()+1:0+1);
+                jsonObject.put("id", (getLastTask() != null) ? getLastTask().getId() + 1 : 0 + 1);
                 jsonObject.put("name", task.getTask());
                 jsonObject.put("dueDate", task.getDueDate());
                 jsonObject.put("category", task.getCategory());
                 jsonObject.put("priority", task.getPriority());
+                jsonObject.put("user", task.getUser());
 
                 JSONArray jsonArray = getJSONArray();
 
@@ -72,21 +74,32 @@ public class TaskDAO implements DAO {
     @Override
     public Object read() {
 
-        tasks=new ArrayList<>();
+        tasks = new ArrayList<>();
 
         if (getJSONArray() != null) {
 
             getJSONArray().forEach((jobj) -> {
 
-                JSONObject teamObject = (JSONObject) jobj;
+                JSONObject taskObject = (JSONObject) jobj;
 
-                int id = Integer.parseInt(teamObject.get("id").toString());
-                String name = String.valueOf(teamObject.get("name").toString());
-                String date = String.valueOf(teamObject.get("dueDate").toString());
-                String category = String.valueOf(teamObject.get("category").toString());
-                int priority = Integer.parseInt(teamObject.get("priority").toString());
+                int id = Integer.parseInt(taskObject.get("id").toString());
+                String name = String.valueOf(taskObject.get("name").toString());
+                String date = String.valueOf(taskObject.get("dueDate").toString());
+                String category = String.valueOf(taskObject.get("category").toString());
+                int priority = Integer.parseInt(taskObject.get("priority").toString());
 
-                Task task = new Task(id, name, date, category, priority);
+                User user = new User();
+                JSONObject userObject = (JSONObject) taskObject.get("user");
+
+                user.setId(Integer.parseInt(userObject.get("id").toString()));
+                user.setName(userObject.get("name").toString());
+
+                JSONObject teamObject=(JSONObject) userObject.get("team");
+                Team team=new Team(Integer.parseInt(teamObject.get("id").toString()),teamObject.get("name").toString());
+
+                user.setTeam(team);
+
+                Task task = new Task(id, name, date, category, priority,user);
 
                 tasks.add(task);
 
@@ -143,7 +156,7 @@ public class TaskDAO implements DAO {
 
     }
 
-    private Task getLastTask(){
+    private Task getLastTask() {
 
         if (getJSONArray() != null) {
 
