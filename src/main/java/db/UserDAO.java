@@ -1,40 +1,39 @@
 package db;
 
-import model.Task;
-import model.Team;
+import model.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaskDAO implements DAO {
+public class UserDAO implements DAO {
 
-    final File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath(), "/db/task.json");
+    File file = new File("src/main/java/db/user.json");
 
-    private List<Task> tasks;
+    private List<User> users = new ArrayList<>();
 
+    public UserDAO() {
+    }
+
+    /*add a User to the UserDAO*/
     @Override
     public void insert(Object obj) {
 
-        Task task = (Task) obj;
+        User user = (User) obj;
 
-        if (!taskExists(task)) {
+        if (!userExists(user)) {
 
             try {
 
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id", (getLastTask()!=null)?getLastTask().getId()+1:0+1);
-                jsonObject.put("name", task.getTask());
-                jsonObject.put("dueDate", task.getDueDate());
-                jsonObject.put("category", task.getCategory());
-                jsonObject.put("priority", task.getPriority());
+
+                jsonObject.put("id", user.getId());
+                jsonObject.put("name", user.getName());
+                jsonObject.put("idTeam", user.getIdTeam());
 
                 JSONArray jsonArray = getJSONArray();
 
@@ -57,48 +56,50 @@ public class TaskDAO implements DAO {
                 e.printStackTrace();
             }
         }
+
     }
 
+    /*Update a User from the DAO*/
     @Override
     public void update() {
 
     }
 
+    /*Delete a User from the DAO*/
     @Override
     public void delete(int id) {
 
+
     }
 
+    /*Get Users from the DAO*/
     @Override
     public Object read() {
-
-        tasks=new ArrayList<>();
 
         if (getJSONArray() != null) {
 
             getJSONArray().forEach((jobj) -> {
 
-                JSONObject teamObject = (JSONObject) jobj;
+                JSONObject userObject = (JSONObject) jobj;
 
-                int id = Integer.parseInt(teamObject.get("id").toString());
-                String name = String.valueOf(teamObject.get("name").toString());
-                String date = String.valueOf(teamObject.get("dueDate").toString());
-                String category = String.valueOf(teamObject.get("category").toString());
-                int priority = Integer.parseInt(teamObject.get("priority").toString());
+                int id = Integer.parseInt(userObject.get("id").toString());
+                String name = String.valueOf(userObject.get("name").toString());
+                int idteam = Integer.parseInt(userObject.get("idTeam").toString());
 
+                User user = new User(id, name,idteam);
 
-                Task task = new Task(id, name, date, category, priority);
-
-                tasks.add(task);
+                users.add(user);
 
             });
         }
 
-        return tasks;
+        return users;
     }
 
+    /*Returns the number of users in the DAO*/
     @Override
     public int size() {
+
         if (!isEmpty()) return (int) getJSONArray().stream().count();
 
         return 0;
@@ -110,12 +111,12 @@ public class TaskDAO implements DAO {
         return file.length() <= 0 ? true : false;
     }
 
-    /*Checks whether Task passed in the parameter args exists*/
-    public boolean taskExists(Task tsk) {
+    /*Checks whether User passed in the parameter args exists*/
+    public boolean userExists(User userChek) {
 
         if (getJSONArray() != null) {
 
-            return ((List<Task>) read()).stream().anyMatch((task) -> task.getTask().equals(tsk.getTask()) ? true : false);
+            return ((List<User>) read()).stream().anyMatch((user) -> user.equals(userChek));
         }
 
         return false;
@@ -144,15 +145,5 @@ public class TaskDAO implements DAO {
 
     }
 
-    private Task getLastTask(){
-
-        if (getJSONArray() != null) {
-
-            return ((List<Task>) read()).get(tasks.size() - 1);
-
-        }
-
-        return null;
-    }
 
 }

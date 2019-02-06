@@ -19,6 +19,7 @@ public class Task {
 
     /*Edwin Bernal: i am adding a new constructor because the user need it*/
     public Task(int id, String task, String dueDate, String category, int priority, int iduser) {
+
         this.id = id;
         this.task = task;
         this.dueDate = dueDate;
@@ -74,4 +75,7 @@ public class Task {
     public void setPriority(int priority) {
         this.priority = priority;
     }
+
+
 }
+
