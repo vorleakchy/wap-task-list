@@ -25,7 +25,7 @@
 			</div>
 			<div>
 				<label>Required by</label> <input type="date" required="required"
-					name="requiredBy" />
+					name="dueDate" />
 			</div>
 			<div>
 				<label>Category</label> <select name="category">
@@ -54,7 +54,7 @@
             <legend>Filters</legend>
             <div>
                 <label>Priority</label> <select id="priority-filter">
-                <option value=""></option>
+                <option value="">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -93,10 +93,21 @@
 	</section>
 	</main>
 	<footer>You have <span id="taskCount"></span> tasks</footer>
+
+	<div id="loader">
+		<div class="inner-loader"></div>
+		Loading...
+	</div>
 </body>
 <script>
 function initScreen() {
 	$(document).ready(function() {
+		const $loading = $('#loader');
+		$loading.hide();
+
+		$(document).ajaxStart(() => { $loading.show(); })
+				.ajaxStop(()  => { $loading.hide(); });
+
 		tasksController.init($('#taskPage'), function() {
 			tasksController.loadTasks();
 		});		
@@ -126,7 +137,7 @@ if (window.indexedDB) {
 <script id="taskRow" type="text/x-jQuery-tmpl">
 <tr>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
-	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${requiredBy}">${requiredBy}</time></td>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${dueDate}">${dueDate}</time></td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${category}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${priority}</td>
 	<td>
