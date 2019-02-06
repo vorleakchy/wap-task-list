@@ -20,10 +20,6 @@
 		<form id="taskForm">
 			<input type="hidden" name="id"/>
 			<div>
-				<label>User</label> <input type="text"
-										   name="user" class="large" placeholder="Enter user" maxlength="200"  />
-			</div>
-			<div>
 				<label>Task</label> <input type="text" required="required"
 					name="task" class="large" placeholder="Breakfast at Tiffanys" maxlength="200"  />
 			</div>
@@ -39,8 +35,8 @@
 			</div>
 			<div>
 				<label>User</label> <select name="user">
-				<option value='{"id": 1, "name": "user1"}'>user1</option>
-				<option value='{"id": 2, "name": "user2"}'>user2</option>
+				<option value='{"id":1,"name":"user1","team":{"id":1,"name":"teamA"}}'>user1</option>
+				<option value='{"id":2,"name":"user2","team":{"id":1,"name":"teamA"}}'>user2</option>
 			</select>
 			</div>
 			<div>

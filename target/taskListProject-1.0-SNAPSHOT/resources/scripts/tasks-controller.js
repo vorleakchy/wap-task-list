@@ -112,6 +112,8 @@ tasksController = function() {
                     function(evt) {
                         $(taskPage).find('#taskCreation').removeClass('not');
                         storageEngine.findById('task', $(evt.target).data().taskId, function(task) {
+                            console.log(task)
+                            window.task = task
                             $(taskPage).find('form').fromObject(task);
                         }, errorLogger);
                     }
@@ -135,6 +137,8 @@ tasksController = function() {
                     evt.preventDefault();
                     if ($(taskPage).find('form').valid()) {
                         var task = $(taskPage).find('form').toObject();
+                        task.user = JSON.parse(task.user);
+
                         storageEngine.save('task', task, function() {
                             $(taskPage).find('#tblTasks tbody').empty();
                             tasksController.loadTasks();

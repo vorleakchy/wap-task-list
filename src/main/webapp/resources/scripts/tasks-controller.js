@@ -112,6 +112,8 @@ tasksController = function() {
                     function(evt) {
                         $(taskPage).find('#taskCreation').removeClass('not');
                         storageEngine.findById('task', $(evt.target).data().taskId, function(task) {
+                            console.log(task)
+                            window.task = task
                             $(taskPage).find('form').fromObject(task);
                         }, errorLogger);
                     }
