@@ -53,6 +53,20 @@ tasksController = function() {
         });
     }
 
+    function loadTasksToTable(tasks) {
+        $(taskPage).find('#tblTasks tbody').empty();
+
+        $.each(tasks, function(index, task) {
+            if (!task.complete) {
+                task.complete = false;
+            }
+            $('#taskRow').tmpl(task).appendTo($(taskPage).find('#tblTasks tbody'));
+        });
+
+        taskCountChanged();
+        renderTable();
+    }
+
     return {
         init : function(page, callback) {
             if (initialised) {
@@ -129,6 +143,16 @@ tasksController = function() {
                         }, errorLogger);
                     }
                 });
+
+
+                $(taskPage).find('#priority-filter').on('change', function(evt) {
+                    storageEngine.findByProperty('task', 'priority', $(evt.target).val(), function(tasks) {
+                        loadTasksToTable(tasks);
+                    }, errorLogger);
+                });
+
+
+
                 initialised = true;
             }
         },
