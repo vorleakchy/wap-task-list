@@ -6,7 +6,7 @@ public class Task {
     private String task;
     private String dueDate;
     private String category;
-    private int idUser;
+    private User user;
     private int priority;
 
     public Task(int id, String task, String dueDate, String category, int priority) {
@@ -18,13 +18,13 @@ public class Task {
     }
 
     /*Edwin Bernal: i am adding a new constructor because the user need it*/
-    public Task(int id, String task, String dueDate, String category, int priority, int iduser) {
+    public Task(int id, String task, String dueDate, String category, int priority, User obuser) {
 
         this.id = id;
         this.task = task;
         this.dueDate = dueDate;
         this.category = category;
-        this.idUser = iduser;
+        this.user = obuser;
         this.priority = priority;
     }
 
@@ -60,12 +60,12 @@ public class Task {
         this.category = category;
     }
 
-    public int getIdUser() {
-        return idUser;
+    public User getUser() {
+        return user;
     }
 
-    public void setIdUser(int iduser) {
-        this.idUser = iduser;
+    public void setUser(User obuser) {
+        this.user = obuser;
     }
 
     public int getPriority() {
