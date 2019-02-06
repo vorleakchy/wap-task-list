@@ -21,7 +21,7 @@ class TaskDAOTest {
     @Test
     void insert() {
 
-        taskDAO.insert(new Task(2,"Create another one",new Date(2019,02,12).toString(),"Tasks",1,2));
+        taskDAO.insert(new Task(2,"Create a task",new Date(2019,02,12).toString(),"Tasks",1,2));
 
     }
 
