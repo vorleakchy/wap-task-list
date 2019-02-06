@@ -36,7 +36,23 @@ public class TaskDAO implements DAO {
                 jsonObject.put("dueDate", task.getDueDate());
                 jsonObject.put("category", task.getCategory());
                 jsonObject.put("priority", task.getPriority());
-                jsonObject.put("user", task.getUser());
+
+                User user=task.getUser();
+
+                JSONObject userObject=new JSONObject();
+                userObject.put("id",user.getId());
+                userObject.put("name",user.getName());
+
+                Team team=task.getUser().getIdTeam();
+                JSONObject teamObject=new JSONObject();
+
+                teamObject.put("id",team.getId());
+                teamObject.put("name",team.getName());
+
+                userObject.put("team",teamObject);
+
+
+                jsonObject.put("user", userObject);
 
                 JSONArray jsonArray = getJSONArray();
 
