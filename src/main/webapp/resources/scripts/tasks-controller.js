@@ -1,19 +1,3 @@
-Skip to content
-
-Pull requests
-Issues
-Marketplace
-Explore
-@StevenKatabalwa Sign out
-2
-0 0 vorleakchy/wap-task-list
-Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-wap-task-list/src/main/webapp/resources/scripts/tasks-controller.js
-ed4cc6c  12 hours ago
-@StevenKatabalwa StevenKatabalwa Updated client code for Tasks
-@StevenKatabalwa @StevenKata
-
-    249 lines (212 sloc)  8.42 KB
 tasksController = function () {
 
     function errorLogger(errorCode, errorMessage) {
