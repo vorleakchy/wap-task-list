@@ -2,6 +2,8 @@ package utility;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MockDataTest {
@@ -9,9 +11,9 @@ class MockDataTest {
     MockData mockData=new MockData();
 
     @Test
-    void retrieveTeams() {
+    void retrieveTasks() {
 
-        assertEquals(null,mockData.retrieveTeams());
+        assertEquals(new ArrayList<>(),mockData.retrieveTaskList());
 
     }
 }

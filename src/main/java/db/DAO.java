@@ -1,12 +1,10 @@
 package db;
 
-import java.io.IOException;
-
 public interface DAO {
 
     public void insert(Object obj);
 
-    public void update();
+    public void update(int id);
 
     public void delete(int id);
 

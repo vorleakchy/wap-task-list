@@ -2,11 +2,8 @@ package utility;
 
 import db.DAO;
 import db.TaskDAO;
-import db.TeamDAO;
-import db.UserDAO;
 import model.*;
 import model.Task;
-import model.Team;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,47 +18,39 @@ import java.util.List;
 public class MockData {
 
     public ArrayList<User> userList = new ArrayList<>();
-
-
-    public ArrayList<User> retrieveUserList() {
-        /*
-        userList.add(new User(1,"Vorleak",1));
-        userList.add(new User(1,"Steven",1));
-        userList.add(new User(1,"Edwin",1));
-        userList.add(new User(1,"Chy",2));
-        userList.add(new User(1,"Bernal",5));
-        userList.add(new User(1,"Duran",5));
-        return userList;
-        */
-        DAO daoUser= new UserDAO();
-        return (ArrayList<User>) daoUser.read();// must chek if correct arraylist or list
-    }
-
     public ArrayList<Task> taskList = new ArrayList<>();
+
     DAO taskDAO = new TaskDAO();
-    DAO teamDAO = new TeamDAO();
 
     public List<Task> retrieveTaskList() {
 
         return (List<Task>) taskDAO.read();
     }
 
+    /**
+     * --Delegation--
+     * Adds a single task to the datastore
+     * @param task
+     */
     public void addTask(Task task) {
 
         taskDAO.insert(task);
 
     }
-    public void addTasks(List<Task> tasks){
+
+    /**
+     * --Delegation--
+     * Adds a list of tasks to the datastore
+     * @param tasks
+     */
+    public void addTasks(List<Task> tasks) {
+
+        ((TaskDAO)taskDAO).clear();
 
         tasks.forEach(task -> addTask(task));
 
     }
 
-    public List<Team> retrieveTeams() {
-
-        return (List<Team>) teamDAO.read();
-
-    }
 
 }
 

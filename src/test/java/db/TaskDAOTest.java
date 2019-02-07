@@ -34,12 +34,14 @@ class TaskDAOTest {
     @Test
     void size() {
 
-        assertEquals(2,taskDAO.size());
+        assertEquals(1,taskDAO.size());
 
     }
 
     @Test
     void isEmpty() {
+
+        assertEquals(false,taskDAO.isEmpty());
     }
 
     @Test
