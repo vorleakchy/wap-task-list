@@ -104,7 +104,7 @@ public class TaskDAO implements DAO {
 
 
     /**
-     * Clears all data from the datastore
+     * Clears all data from the data store
      */
     public void clear() {
 

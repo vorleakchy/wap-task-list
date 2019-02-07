@@ -30,6 +30,7 @@ public class MockData {
     /**
      * --Delegation--
      * Adds a single task to the datastore
+     *
      * @param task
      */
     public void addTask(Task task) {
@@ -41,16 +42,21 @@ public class MockData {
     /**
      * --Delegation--
      * Adds a list of tasks to the datastore
+     *
      * @param tasks
      */
     public void addTasks(List<Task> tasks) {
 
-        ((TaskDAO)taskDAO).clear();
+        clearTaskData();
 
-        tasks.forEach(task -> addTask(task));
+        tasks.forEach(task -> taskDAO.insert(task));
 
     }
 
+    public void clearTaskData() {
+
+        ((TaskDAO) taskDAO).clear();
+    }
 
 }
 
