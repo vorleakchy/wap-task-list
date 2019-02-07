@@ -106,6 +106,7 @@ storageEngine = function() {
 	    		errorCallback('object_not_stored', 'It is not possible to delete the object');
 	    	};
 	    },
+
 	    findByProperty : function(type, propertyName, propertyValue, successCallback, errorCallback) {
 	    	if (!database) {
 	    		errorCallback('storage_api_not_initialized', 'The storage engine has not been initialized');
@@ -115,9 +116,11 @@ storageEngine = function() {
 	    	var objectStore = tx.objectStore(type);
 	    	objectStore.openCursor().onsuccess = function(event) {
 	    		var cursor = event.target.result;
+
 	    		if (cursor) {
 	    			if (cursor.value[propertyName] == propertyValue) {
 	    				result.push(cursor.value);
+
 	    			}
 	    			cursor.continue();
 	    		} else {

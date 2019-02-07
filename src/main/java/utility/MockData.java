@@ -1,10 +1,10 @@
 package utility;
 
-import db.UserDAO;
-import model.*;
 import db.DAO;
 import db.TaskDAO;
 import db.TeamDAO;
+import db.UserDAO;
+import model.*;
 import model.Task;
 import model.Team;
 
@@ -49,6 +49,11 @@ public class MockData {
     public void addTask(Task task) {
 
         taskDAO.insert(task);
+
+    }
+    public void addTasks(List<Task> tasks){
+
+        tasks.forEach(task -> addTask(task));
 
     }
 

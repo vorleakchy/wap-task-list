@@ -8,11 +8,21 @@
   <component name="ChangeListManager">
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utility/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/MockData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/MockDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/MockDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TaskServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TaskServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/MockData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/controller/TaskServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/controller/TaskServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/utility/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/utility/MockData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/styles/tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/styles/tasks.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/MockDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/MockDataTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,28 +35,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="37" column="92" selection-start-line="37" selection-start-column="92" selection-end-line="37" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="115" column="45" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+            <state relative-caret-position="170">
+              <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-serialization.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="161">
+              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/Gson.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/db/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -60,6 +100,7 @@
         <option value="JavaScript File" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,6 +108,7 @@
     <findStrings>
       <find>btn</find>
       <find>edit</find>
+      <find>findByPr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,15 +129,17 @@
         <option value="$PROJECT_DIR$/src/test/java/DAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/TeamDAO.java" />
         <option value="$PROJECT_DIR$/target/classes/db/task.json" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
         <option value="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/db/task.json" />
         <option value="$PROJECT_DIR$/src/main/java/db/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/TaskDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/UserDAOTest.java" />
+        <option value="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/tasks.html" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
       </list>
     </option>
   </component>
@@ -127,65 +171,192 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wap-task-list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wap-task-list" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="taskListProject-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549486625677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549499108574" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/db" />
@@ -200,20 +371,20 @@
       <recent name="controller" />
       <recent name="utility" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources\scripts" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="db" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Steven\Documents\COMPRO\WAP\Project\TaskListProject\target\classes\db" />
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp" />
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources\styles" />
       <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Keith Levi\Dropbox\2017-11WAP\project\taskListProject\src\main\webapp\resources\scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,7 +504,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tom8523" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="tom8523" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -484,7 +655,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55452000" />
+    <option name="totallyTimeSpent" value="57662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,9 +667,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7038917" visible="true" weight="0.22031474" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7038917" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -508,17 +680,17 @@
       <window_info id="Web" order="7" sideWeight="0.2961083" side_tool="true" weight="0.22031474" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6322148" visible="true" weight="0.24713376" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3654391" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62885904" weight="0.24787535" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" visible="true" weight="0.3654391" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36778525" side_tool="true" weight="0.24787535" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3654391" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49731544" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.3286119" />
@@ -649,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-servlet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
@@ -670,16 +835,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/TeamServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
+        <state relative-caret-position="313">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -694,32 +852,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/db/task.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/db/task.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="174" selection-start-column="174" selection-end-column="174" />
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -790,30 +934,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/db/UserDAOTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/TaskDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15881">
-          <caret line="1054" column="39" selection-start-line="1054" selection-start-column="39" selection-end-line="1054" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" column="92" selection-start-line="37" selection-start-column="92" selection-end-line="37" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-serialization.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -821,10 +941,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="216" column="17" lean-forward="true" selection-start-line="216" selection-start-column="17" selection-end-line="216" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="1023" column="65" lean-forward="true" selection-start-line="1023" selection-start-column="65" selection-end-line="1023" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/TaskDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="121" column="62" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="115" column="45" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+        <state relative-caret-position="170">
+          <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
         </state>
       </provider>
     </entry>
