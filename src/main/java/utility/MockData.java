@@ -51,11 +51,12 @@ public class MockData {
      */
     public void addTasks(List<Task> tasks) {
 
-        ((TaskDAO) taskDAO).clear();
+        clearTaskData();
 
-        tasks.forEach(task -> addTask(task));
+        tasks.forEach(task -> taskDAO.insert(task));
 
     }
+
 
     public void addUser(User user) {
 
@@ -76,6 +77,12 @@ public class MockData {
     public List<Team> getTeams() {
 
         return (List<Team>) teamDAO.read();
+
+    }
+
+    public void clearTaskData() {
+
+        ((TaskDAO) taskDAO).clear();
 
     }
 
