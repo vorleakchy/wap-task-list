@@ -259,7 +259,8 @@ tasksController = function () {
                     let user = new User(undefined, userName, selectedTeam);
 
                     storetoServer("UserServlet", user);
-
+                    
+                    $(taskPage).find('#userCreation').addClass('not');
 
                 })
 

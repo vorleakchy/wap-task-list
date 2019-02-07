@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/MockDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/MockDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/MockDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/MockDataTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="163" column="37" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+            <state relative-caret-position="333">
+              <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
               <folding>
                 <element signature="e#5423#5890#0" />
                 <element signature="e#3203#3857#0" />
@@ -426,7 +423,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549527775525" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549527939833" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/db" />
@@ -732,7 +729,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78298000" />
+    <option name="totallyTimeSpent" value="79058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1127,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="163" column="37" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+        <state relative-caret-position="333">
+          <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
           <folding>
             <element signature="e#5423#5890#0" />
             <element signature="e#3203#3857#0" />
