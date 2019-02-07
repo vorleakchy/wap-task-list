@@ -161,7 +161,7 @@ tasksController = function () {
                     return getFromServer("UserServlet", null, retrieveUsers.bind());
 
                     function retrieveUsers(data) {
-                        let users = $(elem).html();
+                        let users = "";
 
                         data.forEach(user => {
                             users += "<option value='" + JSON.stringify(user) + "'>" + user.name + "</option>";

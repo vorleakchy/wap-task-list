@@ -36,7 +36,7 @@ class MockDataTest {
     @Test
     void addTeam(){
 
-        mockData.addTeam(new Team(1,"Green"));
+        mockData.addTeam(new Team(2,"Blue"));
 
     }
 
