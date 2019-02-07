@@ -150,6 +150,12 @@ tasksController = function () {
 
                     storageEngine.findAll("task",storetoDB.bind(),errorLogger());
 
+                    /**
+                     * function to save data to the database
+                     * passes data to a JSON object and uses ajax to create a post
+                     * request to the server.
+                     * @param data
+                     */
                     function storetoDB(data) {
 
                         $.ajax({
@@ -166,7 +172,7 @@ tasksController = function () {
                         }
 
                         function onFail() {
-                            console.log("Fail to save to Database");
+                            console.log("Failed to save to Database");
                         }
 
                     }
@@ -202,7 +208,14 @@ tasksController = function () {
                     }, errorLogger);
                 });
 
-                /* Team Filter */
+                /**
+                 *  Team Filter
+                 *  Filters all the data by Team.
+                 *  Uses the tasks object to look up for all users in the tasks who
+                 *  belong to a team specified by the id passed in the value of the
+                 *  DOM element.
+                 *
+                 *  */
                 $(taskPage).find('#team-filter').on('change', function (evt) {
                     const teamId = parseInt($(evt.target).val());
 
