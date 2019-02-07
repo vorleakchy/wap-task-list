@@ -2,6 +2,8 @@ package utility;
 
 import db.DAO;
 import db.TaskDAO;
+import db.TeamDAO;
+import db.UserDAO;
 import model.*;
 import model.Task;
 
@@ -21,6 +23,8 @@ public class MockData {
     public ArrayList<Task> taskList = new ArrayList<>();
 
     DAO taskDAO = new TaskDAO();
+    DAO userDAO = new UserDAO();
+    DAO teamDAO = new TeamDAO();
 
     public List<Task> retrieveTaskList() {
 
@@ -30,6 +34,7 @@ public class MockData {
     /**
      * --Delegation--
      * Adds a single task to the datastore
+     *
      * @param task
      */
     public void addTask(Task task) {
@@ -41,16 +46,38 @@ public class MockData {
     /**
      * --Delegation--
      * Adds a list of tasks to the datastore
+     *
      * @param tasks
      */
     public void addTasks(List<Task> tasks) {
 
-        ((TaskDAO)taskDAO).clear();
+        ((TaskDAO) taskDAO).clear();
 
         tasks.forEach(task -> addTask(task));
 
     }
 
+    public void addUser(User user) {
+
+        userDAO.insert(user);
+
+    }
+
+    public List<User> getUsers() {
+
+        return (List<User>) userDAO.read();
+    }
+
+    public void addTeam(Team team) {
+
+        teamDAO.insert(team);
+    }
+
+    public List<Team> getTeams() {
+
+        return (List<Team>) teamDAO.read();
+
+    }
 
 }
 

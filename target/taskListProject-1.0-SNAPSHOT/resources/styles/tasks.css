@@ -186,3 +186,9 @@ fieldset {
 table th {
     cursor: pointer;
 }
+
+#userCreation h3{
+
+	font-size: 20px;
+	font-weight: bold;
+}

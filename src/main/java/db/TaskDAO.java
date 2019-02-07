@@ -44,7 +44,7 @@ public class TaskDAO implements DAO {
                 userObject.put("id", user.getId());
                 userObject.put("name", user.getName());
 
-                Team team = task.getUser().getIdTeam();
+                Team team = task.getUser().getTeam();
                 JSONObject teamObject = new JSONObject();
 
                 teamObject.put("id", team.getId());

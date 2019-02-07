@@ -18,7 +18,7 @@ public class User {
         return id;
     }
 
-    public Team getIdTeam() {
+    public Team getTeam() {
         return team;
     }
 
@@ -30,8 +30,8 @@ public class User {
         this.id = id;
     }
 
-    public void setTeam(Team obteam) {
-        this.team = obteam;
+    public void setTeam(Team team) {
+        this.team = team;
     }
 
     public void setName(String name) {
@@ -47,7 +47,7 @@ public class User {
         }
         else{
 
-            return this.id==((User)obj).getId()?true:false;
+            return this.getName().equals(((User)obj).getName());
         }
 
     }

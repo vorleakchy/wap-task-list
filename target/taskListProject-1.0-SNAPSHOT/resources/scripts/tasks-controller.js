@@ -7,6 +7,19 @@ tasksController = function () {
     var taskPage;
     var initialised = false;
 
+    const Team = function (id, name) {
+
+        this.id = id;
+        this.name = name;
+
+    }
+
+    const User = function (id, name, team) {
+        this.id = id;
+        this.name = name;
+        this.team = team;
+    }
+
     /**
      * makes json call to server to get task list.
      * currently just testing this and writing return value out to console
@@ -67,12 +80,74 @@ tasksController = function () {
         renderTable();
     }
 
+    function getTeams(successCallBack, errorLog) {
+
+        $.ajax({
+            "url": "TeamServlet",
+            "type": "get",
+            dataType: "json",
+            //"data": {task:JSON.stringify(data)},
+            "success": successCallBack,
+            "fail": errorLog
+        });
+    }
+
+
+    /**
+     * function to retrieve data from server database
+     *
+     * @param data
+     */
+    function getFromServer(servlet, data, successCallBack, errorLog) {
+
+        $.ajax({
+            "url": servlet,
+            "type": "get",
+            dataType: "json",
+            "data": {task: JSON.stringify(data)},
+            "success": successCallBack,
+            "fail": errorLog
+        });
+
+    }
+
+    /**
+     * function to save data to the database
+     * passes data to a JSON object and uses ajax to create a post
+     * request to the server.
+     * @param data
+     */
+    function storetoServer(servlet, data) {
+
+        $.ajax({
+            "url": servlet,
+            "type": "post",
+            dataType: "json",
+            "data": {params: JSON.stringify(data)},
+            "success": onSuccess,
+            "fail": onFail
+        })
+
+        function onSuccess(data) {
+            serverTaskData = data;
+
+            console.log(serverTaskData);
+        }
+
+        function onFail() {
+            console.log("Failed to save to Database");
+        }
+
+    }
+
     return {
         init: function (page, callback) {
+
             if (initialised) {
                 callback()
             } else {
                 taskPage = page;
+
                 storageEngine.init(function () {
                     storageEngine.initObjectStore('task', function () {
                         callback();
@@ -84,7 +159,81 @@ tasksController = function () {
                 $(taskPage).find('#btnAddTask').click(function (evt) {
                     evt.preventDefault();
                     $(taskPage).find('#taskCreation').removeClass('not');
+                    $(taskPage).find('#userCreation').addClass('not');
+
+                    loadUsers();
                 });
+
+                let selectedTeam = undefined;
+
+                function loadUsers() {
+
+                    return getFromServer("UserServlet", null, retrieveUsers.bind());
+
+                    function retrieveUsers(data) {
+
+                        let users = "";
+
+                        data.forEach(user => {
+
+
+                            users += "<option value='"+ JSON.stringify(user) +"'>" + user.name + "</option>";
+
+                        });
+
+                        console.log(users);
+                        $(taskPage).find('#userSelect').html(users);
+                    }
+
+                };
+
+                loadUsers();
+
+                $(taskPage).find('#btnAddUser').click(function (evt) {
+                    evt.preventDefault();
+                    $(taskPage).find('#userCreation').removeClass('not');
+                    $(taskPage).find('#taskCreation').addClass('not');
+
+                    let teams = "";
+
+                    getTeams(callback.bind());
+
+                    function callback(data) {
+
+                        selectedTeam = new Team(data[0].id, data[0].name);
+
+                        data.forEach(team => {
+
+                            teams += "<option value='" + team.id + "'>" + team.name + "</option>"
+
+                        })
+
+                        $(taskPage).find('#userTeam').html(teams);
+
+                    }
+
+                });
+
+
+                $(taskPage).find('#userTeam').on('change', function (evt) {
+
+                    evt.preventDefault();
+                    let selectedUserID = $(evt.target).val();
+
+                    selectedTeam = new Team(selectedUserID, null);
+
+                });
+
+                $(taskPage).find('#btnSaveUser').on('click', function () {
+
+                    let userName = $(taskPage).find('#userName').val();
+
+                    let user = new User(undefined, userName, selectedTeam);
+
+                    storetoServer("UserServlet", user);
+
+
+                })
 
                 /**     * 11/19/17kl        */
                 $(taskPage).find('#btnRetrieveTasks').click(function (evt) {
@@ -148,7 +297,7 @@ tasksController = function () {
 
                 $(taskPage).find('#btnSaveTasks').on('click', function () {
 
-                    storageEngine.findAll("task",storetoDB.bind(),errorLogger());
+                    storageEngine.findAll("task", storetoDB.bind(), errorLogger());
 
                     /**
                      * function to save data to the database
