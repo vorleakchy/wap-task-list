@@ -10,6 +10,7 @@
 <script src="resources/scripts/jquery-serialization.js"></script>
 <script src="resources/scripts/tasks-controller.js"></script>
 <script src="resources/scripts/date.js"></script>
+<script src="resources/scripts/stupidtable.min.js"></script>
 </head>
 <body>
 	<header>
@@ -104,12 +105,12 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>User</th>
-					<th>Team</th>
-					<th>Task</th>
-					<th>Due</th>
-					<th>Category</th>
-					<th>Priority</th>
+					<th data-sort="string">User</th>
+					<th data-sort="string">Team</th>
+					<th data-sort="string">Task</th>
+					<th data-sort="int">Due</th>
+					<th data-sort="string">Category</th>
+					<th data-sort="int">Priority</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -138,6 +139,8 @@ function initScreen() {
 
 		$(document).ajaxStart(() => { $loading.show(); })
 				.ajaxStop(()  => { $loading.hide(); });
+
+		$("table").stupidtable();
 
 		tasksController.init($('#taskPage'), function() {
 			tasksController.loadTasks();

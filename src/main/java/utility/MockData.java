@@ -53,7 +53,7 @@ public class MockData {
     }
     public void addTasks(List<Task> tasks){
 
-        tasks.forEach(task -> {addTask(task);});
+        tasks.forEach(task -> addTask(task));
 
     }
 
