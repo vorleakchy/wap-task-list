@@ -186,3 +186,9 @@ fieldset {
 table th {
     cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+    #filters {
+		flex-direction: column;
+	}
+}

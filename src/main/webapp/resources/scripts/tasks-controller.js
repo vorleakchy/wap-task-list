@@ -146,9 +146,9 @@ tasksController = function () {
                     }
                 });
 
-                $(taskPage).find('#btnSaveTasks').on('click', function () {
-
-                    storageEngine.findAll("task",storetoDB.bind(),errorLogger());
+                $(taskPage).find('#btnSaveTasks').on('click', function (evt) {
+                    evt.preventDefault();
+                    storageEngine.findAll("task", storetoDB.bind(), errorLogger());
 
                     /**
                      * function to save data to the database
@@ -177,7 +177,7 @@ tasksController = function () {
 
                     }
 
-                })
+                });
 
                 /* Priority Filter */
                 $(taskPage).find('#priority-filter').on('change', function (evt) {
