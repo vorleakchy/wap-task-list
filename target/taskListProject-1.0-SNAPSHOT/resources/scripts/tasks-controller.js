@@ -166,28 +166,54 @@ tasksController = function () {
 
                 let selectedTeam = undefined;
 
-                function loadUsers() {
+                function loadUsers(elem) {
 
                     return getFromServer("UserServlet", null, retrieveUsers.bind());
 
                     function retrieveUsers(data) {
-
-                        let users = "";
-
+                        let users = $(elem).html();
                         data.forEach(user => {
-
-
-                            users += "<option value='"+ JSON.stringify(user) +"'>" + user.name + "</option>";
-
+                            users += "<option value='" + JSON.stringify(user) + "'>" + user.name + "</option>";
                         });
 
                         console.log(users);
-                        $(taskPage).find('#userSelect').html(users);
+                        $(taskPage).find(elem).html(users);
+                    }
+                };
+
+                function loadUsersWithValue(elem) {
+
+                    return getFromServer("UserServlet", null, retrieveUsers.bind());
+
+                    function retrieveUsers(data) {
+                        let users = $(elem).html();;
+                        data.forEach(user => {
+                            users += "<option value='" + user.id + "'>" + user.name + "</option>";
+                        });
+
+                        console.log(users);
+                        $(taskPage).find(elem).html(users);
+                    }
+                };
+
+                function loadTeams(elem) {
+
+                    return getFromServer("TeamServlet", null, retrieveTeams.bind());
+
+                    function retrieveTeams(data) {
+                        let teams = $(elem).html();
+                        data.forEach(team => {
+                            teams += "<option value='" + team.id + "'>" + team.name + "</option>";
+                        });
+
+                        $(taskPage).find(elem).html(teams);
                     }
 
                 };
 
-                loadUsers();
+                loadTeams('#team-filter');
+                loadUsers('#userSelect');
+                loadUsersWithValue('#user-filter');
 
                 $(taskPage).find('#btnAddUser').click(function (evt) {
                     evt.preventDefault();
