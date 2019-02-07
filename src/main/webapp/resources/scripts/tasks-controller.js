@@ -156,27 +156,19 @@ tasksController = function () {
                 $(taskPage).find('[required="required"]').prev('label').append('<span>*</span>').children('span').addClass('required');
                 $(taskPage).find('tbody tr:even').addClass('even');
 
-                $(taskPage).find('#btnAddTask').click(function (evt) {
-                    evt.preventDefault();
-                    $(taskPage).find('#taskCreation').removeClass('not');
-                    $(taskPage).find('#userCreation').addClass('not');
-
-                    loadUsers();
-                });
-
-                let selectedTeam = undefined;
-
                 function loadUsers(elem) {
 
                     return getFromServer("UserServlet", null, retrieveUsers.bind());
 
                     function retrieveUsers(data) {
                         let users = $(elem).html();
+
                         data.forEach(user => {
                             users += "<option value='" + JSON.stringify(user) + "'>" + user.name + "</option>";
                         });
 
                         console.log(users);
+
                         $(taskPage).find(elem).html(users);
                     }
                 };
@@ -186,7 +178,8 @@ tasksController = function () {
                     return getFromServer("UserServlet", null, retrieveUsers.bind());
 
                     function retrieveUsers(data) {
-                        let users = $(elem).html();;
+                        let users = $(elem).html();
+                        ;
                         data.forEach(user => {
                             users += "<option value='" + user.id + "'>" + user.name + "</option>";
                         });
@@ -211,8 +204,17 @@ tasksController = function () {
 
                 };
 
+                $(taskPage).find('#btnAddTask').click(function (evt) {
+                    evt.preventDefault();
+                    $(taskPage).find('#taskCreation').removeClass('not');
+                    $(taskPage).find('#userCreation').addClass('not');
+
+                    loadUsers('#userSelect');
+                });
+
+                let selectedTeam = undefined;
+
                 loadTeams('#team-filter');
-                loadUsers('#userSelect');
                 loadUsersWithValue('#user-filter');
 
                 $(taskPage).find('#btnAddUser').click(function (evt) {
