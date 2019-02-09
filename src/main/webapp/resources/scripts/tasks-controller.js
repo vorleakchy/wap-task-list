@@ -179,7 +179,14 @@ tasksController = function () {
 
                 });
 
-                /* Priority Filter */
+                /**
+                 *  Priority Filter
+                 *  Filters all the tasks by priority.
+                 *  Uses the tasks object to look up for all tasks who
+                 *  have priority specified by the priority passed in the value of the
+                 *  DOM element.
+                 *
+                 *  */
                 $(taskPage).find('#priority-filter').on('change', function (evt) {
                     const priority = $(evt.target).val();
 
@@ -193,7 +200,14 @@ tasksController = function () {
                     }
                 });
 
-                /* User Filter */
+                /**
+                 *  User Filter
+                 *  Filters all the tasks by User.
+                 *  Uses the tasks object to look up for all tasks who
+                 *  belong to a user specified by the id passed in the value of the
+                 *  DOM element.
+                 *
+                 *  */
                 $(taskPage).find('#user-filter').on('change', function (evt) {
                     const userId = parseInt($(evt.target).val());
 
